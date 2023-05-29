@@ -2031,12 +2031,41 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3794804585633818313, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
   m_PrefabInstance: {fileID: 2052045936}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1950615056}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1bcd69f27a14848b7d820461a86df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1950615056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2468775001655053620, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+  m_PrefabInstance: {fileID: 2052045936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1950615063 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2468775001655053641, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+  m_PrefabInstance: {fileID: 2052045936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1950615065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950615056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d213a1cc91470944e8a973639ad22bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreKeeper: {fileID: 8309401611679550802}
+  spriteRenderer: {fileID: 1950615063}
+  bayiSprite: {fileID: -2413806693520163455, guid: 17961504445b96b409ed39cffa65cfe5, type: 3}
+  remajaSprite: {fileID: 2747690628134850419, guid: f0cc92776a15d754eb23f79503aa773a, type: 3}
+  dewasaSprite: {fileID: -2135585597343286014, guid: 2a3678f19f416044c9b7aacd6d92e82a, type: 3}
+  dewasaMatangSprite: {fileID: 3625043607559282579, guid: 4b27934ff3cbfea4dba4f46f4b1bf135, type: 3}
+  megamouthSprite: {fileID: -5177388603050735206, guid: 362700da660d6894e9ac3e372b992bd8, type: 3}
 --- !u!1 &1955259277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2289,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2468775001655053622, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
       propertyPath: cameraMovementSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468775001655053641, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468775001655053641, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2468775001655053642, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
