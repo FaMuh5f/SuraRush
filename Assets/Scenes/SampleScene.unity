@@ -596,7 +596,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88a1344b3c150484bb3b8cdceb7def39, type: 3}
   m_Name: 
@@ -2258,6 +2258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2468775001655053622, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+      propertyPath: cameraMovementSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2468775001655053642, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2301,6 +2305,10 @@ PrefabInstance:
     - target: {fileID: 2468775001655053642, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794804585633818313, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}
+      propertyPath: score
+      value: 5000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07b091acdc2dc1240ba7f628b7160ef8, type: 3}

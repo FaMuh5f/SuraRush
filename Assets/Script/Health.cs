@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
 
         if (other.tag == "Fish")
         {
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
             scoreKeeper.ModifyScore(score);    
         }
 
