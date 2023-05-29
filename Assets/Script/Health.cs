@@ -51,7 +51,7 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-            // levelManager.LoadGameOver();
+            levelManager.LoadGameOver();
             Destroy(gameObject); 
     }
 }
