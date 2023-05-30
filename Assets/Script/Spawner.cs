@@ -65,7 +65,55 @@ public class Spawner : MonoBehaviour
     {
         // Check if any enemies have moved past the left side of the camera
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Fish");
+        GameObject[] mediumEnemies = GameObject.FindGameObjectsWithTag("MediumFish");
+        GameObject[] bigEnemies = GameObject.FindGameObjectsWithTag("BigFish");
+        GameObject[] trashes = GameObject.FindGameObjectsWithTag("Trash");
+        GameObject[] powerUps = GameObject.FindGameObjectsWithTag("PowerUp");
         foreach (GameObject enemy in enemies)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+
+        foreach (GameObject enemy in mediumEnemies)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+
+        foreach (GameObject enemy in bigEnemies)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+
+        foreach (GameObject enemy in trashes)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+
+        foreach (GameObject enemy in powerUps)
         {
             Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
             if (enemyScreenPos.x < 0)

@@ -21,15 +21,66 @@ public class Health : MonoBehaviour
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
 
-        if (other.tag == "Fish")
+        if(gameObject.CompareTag("Bayi") || gameObject.CompareTag("Remaja"))
         {
-            Destroy(other.gameObject);
-            scoreKeeper.ModifyScore(score);    
+            if (other.tag == "Fish")
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score);    
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                TakeDamage(damageDealer.GetDamage());
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                TakeDamage(damageDealer.GetDamage());
+            }
+        }else if(gameObject.CompareTag("Dewasa") || gameObject.CompareTag("DewasaMatang"))
+        {
+            if (other.tag == "Fish")
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score);    
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score); 
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                TakeDamage(damageDealer.GetDamage());
+            }
+        }else if(gameObject.CompareTag("Megalodon"))
+        {
+            if (other.tag == "Fish")
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score);    
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score); 
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                Destroy(other.gameObject);
+                scoreKeeper.ModifyScore(score);
+            }
         }
+        
 
         if (other.tag == "Trash")
         {
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
             TakeDamage(damageDealer.GetDamage());
             damageDealer.Hit();
         }

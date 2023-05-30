@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6911496985364211787}
   m_Layer: 9
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Bayi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   increasedMoveSpeed: 25
   powerupDuration: 5
   normalMoveSpeedDecreaseRate: 5
-  cameraMovementSpeed: 0
+  cameraMovementSpeed: 1
   currentMoveSpeed: 0
 --- !u!114 &9054566400632690470
 MonoBehaviour:
@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  health: 100
-  score: 5000
+  health: 1000
+  score: 1000
 --- !u!212 &6911496985364211786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -202,4 +202,4 @@ MonoBehaviour:
   remajaSprite: {fileID: 2747690628134850419, guid: f0cc92776a15d754eb23f79503aa773a, type: 3}
   dewasaSprite: {fileID: -2135585597343286014, guid: 2a3678f19f416044c9b7aacd6d92e82a, type: 3}
   dewasaMatangSprite: {fileID: 3625043607559282579, guid: 4b27934ff3cbfea4dba4f46f4b1bf135, type: 3}
-  megamouthSprite: {fileID: -5177388603050735206, guid: 362700da660d6894e9ac3e372b992bd8, type: 3}
+  megalodonSprite: {fileID: -5177388603050735206, guid: 362700da660d6894e9ac3e372b992bd8, type: 3}

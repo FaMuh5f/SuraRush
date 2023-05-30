@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1750296159775998267}
   - component: {fileID: 1750296159775998266}
   m_Layer: 6
-  m_Name: MediumSpawner
+  m_Name: BigSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 7054528052136601689, guid: ec56f00d4d5e4144497ae9137490fda8, type: 3}
-  - {fileID: 7054528052136601689, guid: 979de72144e23dd4085451438d124be9, type: 3}
-  - {fileID: 7054528052136601689, guid: 10dd7bbe8ef56bf49a62086fce28c480, type: 3}
-  - {fileID: 7054528052136601689, guid: 79fc277cf848b3341847160a4d6100fe, type: 3}
-  spawnInterval: 15
+  - {fileID: 7054528052136601689, guid: 9817f684f5276e349888a1db442be541, type: 3}
+  - {fileID: 7054528052136601689, guid: c9bf7d61f75ca4748939a936bead53f2, type: 3}
+  - {fileID: 7054528052136601689, guid: 656d9fef6a15a254fa34a4f8f0528245, type: 3}
+  - {fileID: 7054528052136601689, guid: cf5b86dc20286c542ac9f1aed145f097, type: 3}
+  spawnInterval: 30
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
   movementRange: 3

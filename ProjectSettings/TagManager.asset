@@ -7,6 +7,13 @@ TagManager:
   - Fish
   - Trash
   - PowerUp
+  - MediumFish
+  - BigFish
+  - Bayi
+  - Remaja
+  - Dewasa
+  - DewasaMatang
+  - Megalodon
   layers:
   - Default
   - TransparentFX
