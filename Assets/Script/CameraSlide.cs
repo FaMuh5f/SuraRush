@@ -9,10 +9,11 @@ public class CameraSlide : MonoBehaviour
     
 
     private Vector3 startPosition; // Starting position of the camera
+    
 
     void Start()
     {
-        startPosition = transform.position; // Store the starting position of the camera
+        startPosition = transform.position; // Stx
     }
 
     void Update()
@@ -30,6 +31,6 @@ public class CameraSlide : MonoBehaviour
 
     public void ResetCamera()
     {
-        startPosition = transform.position;
+        transform.position = startPosition;
     }
 }
