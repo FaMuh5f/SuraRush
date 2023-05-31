@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  health: 1000
+  health: 100
   score: 1000
 --- !u!212 &6911496985364211786
 SpriteRenderer:

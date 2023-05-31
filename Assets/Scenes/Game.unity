@@ -357,6 +357,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: m_Size.x
+      value: 3.2266667
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3533334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911496985364211787, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: bayiSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8c03a46d7e241e4c97f6fd03f9d011b, type: 3}
     - target: {fileID: 6911496985364211787, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: scoreKeeper
       value: 
@@ -1331,12 +1347,38 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7729104164724128932, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
   m_PrefabInstance: {fileID: 394505337}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1031626475}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1bcd69f27a14848b7d820461a86df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1031626475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9054566400632690521, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+  m_PrefabInstance: {fileID: 394505337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1031626483
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031626475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a601ef3288062894092baeef4ed12fdf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1032519370
 GameObject:
   m_ObjectHideFlags: 0
