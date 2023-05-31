@@ -53,4 +53,4 @@ MonoBehaviour:
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
   movementRange: 3
-  maxEnemies: 10
+  maxEnemies: 0

@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        while (spawnedEnemies < maxEnemies)
+        while (true)
         {
             // Select a random enemy prefab from the array
             GameObject randomEnemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
