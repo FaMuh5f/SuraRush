@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class PowerUpSpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;  // Array of enemy prefabs
     public float spawnInterval = 2f;  // Time interval between each enemy spawn

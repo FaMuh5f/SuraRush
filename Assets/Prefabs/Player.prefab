@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7729104164724128932}
   - component: {fileID: 6911496985364211786}
   - component: {fileID: 6911496985364211787}
+  - component: {fileID: 1031626483}
   m_Layer: 9
   m_Name: Player
   m_TagString: Bayi
@@ -103,6 +104,7 @@ MonoBehaviour:
   normalMoveSpeedDecreaseRate: 5
   cameraMovementSpeed: 1
   currentMoveSpeed: 0
+  isAlive: 1
 --- !u!114 &9054566400632690470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +134,9 @@ MonoBehaviour:
   isPlayer: 1
   health: 100
   score: 1000
+  delay: 0.5
+  imuneDelay: 1
+  animator: {fileID: 1031626483}
 --- !u!212 &6911496985364211786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -178,7 +183,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.872, y: 1.624}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -198,8 +203,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreKeeper: {fileID: 0}
   spriteRenderer: {fileID: 6911496985364211786}
-  bayiSprite: {fileID: -2413806693520163455, guid: 17961504445b96b409ed39cffa65cfe5, type: 3}
+  animator: {fileID: 1031626483}
+  bayiSprite: {fileID: 21300000, guid: b8c03a46d7e241e4c97f6fd03f9d011b, type: 3}
   remajaSprite: {fileID: 2747690628134850419, guid: f0cc92776a15d754eb23f79503aa773a, type: 3}
   dewasaSprite: {fileID: -2135585597343286014, guid: 2a3678f19f416044c9b7aacd6d92e82a, type: 3}
   dewasaMatangSprite: {fileID: 3625043607559282579, guid: 4b27934ff3cbfea4dba4f46f4b1bf135, type: 3}
   megalodonSprite: {fileID: -5177388603050735206, guid: 362700da660d6894e9ac3e372b992bd8, type: 3}
+--- !u!95 &1031626483
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a601ef3288062894092baeef4ed12fdf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
