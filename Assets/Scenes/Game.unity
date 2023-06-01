@@ -359,11 +359,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_Size.x
-      value: 3.2266667
+      value: 9.67
       objectReference: {fileID: 0}
     - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_Size.y
-      value: 1.3533334
+      value: 4.06
       objectReference: {fileID: 0}
     - target: {fileID: 6911496985364211786, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: scoreKeeper
       value: 
       objectReference: {fileID: 8309401611679550802}
+    - target: {fileID: 7729104164724128932, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1031626483}
     - target: {fileID: 9054566400632690471, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_RootOrder
       value: 1

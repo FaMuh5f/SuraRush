@@ -13,6 +13,8 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private float currentMoveSpeed;
     private bool isPowerupActive = false;
     private Coroutine powerupCoroutine;
+    
+    public bool isAlive = true;
 
     private float minX, maxX, minY, maxY;
     private float playerWidth, playerHeight;
@@ -55,8 +57,11 @@ public class playerMovement : MonoBehaviour
         float clampedY = Mathf.Clamp(newPosition.y, minY, maxY);
         newPosition = new Vector3(clampedX, clampedY, 0f);
 
+        if (isAlive)
+        {
         // Move the player to the new position
         transform.position = newPosition;
+        }
     }
 
     float GetMoveSpeed()
@@ -97,5 +102,10 @@ public class playerMovement : MonoBehaviour
 
         currentMoveSpeed = normalMoveSpeed;
         isPowerupActive = false;
+    }
+
+    public void setAlive(bool parameter)
+    {
+        isAlive = parameter;
     }
 }
