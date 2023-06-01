@@ -19,15 +19,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // Vector3 startPosition = new Vector3(0f, 0f, -10f); // Replace with your desired start position
+        // Vector3 newPosition = startPosition + new Vector3(0f, 0f, -10f);
+        // transform.position = startPosition;
         cameraSlide.ResetCamera();
         spawner.ResetSpawner();
         scoreKeeper.ResetScore();
         // ResetCameraPosition();
+        // cameraSlide.setGame(true);
     }
 
     void Update() 
     {
-        cameraSlide.setGame(true);    
+        
     }
 
     public void ResetCameraPosition()

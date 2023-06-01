@@ -44,7 +44,7 @@ public class playerSprites : MonoBehaviour
             Debug.Log("megalodonSprite");
             gameObject.tag = "Megalodon";
             animator.SetBool("isDewasaMatang",false);
-            animator.SetBool("Megalodon",true);
+            animator.SetBool("isMegalodon",true);
         }
         else if (score >= 5000)
         {

@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     {
         // scoreKeeper.ResetScore();
         // cameraSlide.ResetCamera();
+        // cameraSlide.setGame(true);
         SceneManager.LoadScene("Game");
     }
 

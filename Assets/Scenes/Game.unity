@@ -205,6 +205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUpSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1750296159775998269, guid: ef5667e7c1475cd4c88996a8341b44b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5667e7c1475cd4c88996a8341b44b9, type: 3}
 --- !u!1001 &65111086
