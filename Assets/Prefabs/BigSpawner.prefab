@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750296159775998267}
   - component: {fileID: 1750296159775998266}
+  - component: {fileID: 1003901625}
   m_Layer: 6
   m_Name: BigSpawner
   m_TagString: Untagged
@@ -54,3 +55,25 @@ MonoBehaviour:
   moveSpeedVertical: 1
   movementRange: 3
   maxEnemies: 0
+--- !u!114 &1003901625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750296159775998269}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc2fc8b73467524b8d2fac45da270b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7054528052136601689, guid: 9817f684f5276e349888a1db442be541, type: 3}
+  - {fileID: 7054528052136601689, guid: c9bf7d61f75ca4748939a936bead53f2, type: 3}
+  - {fileID: 7054528052136601689, guid: 656d9fef6a15a254fa34a4f8f0528245, type: 3}
+  - {fileID: 7054528052136601689, guid: cf5b86dc20286c542ac9f1aed145f097, type: 3}
+  spawnInterval: 30
+  moveSpeedHorizontal: 1
+  moveSpeedVertical: 1
+  movementRange: 3
+  maxEnemies: 10
