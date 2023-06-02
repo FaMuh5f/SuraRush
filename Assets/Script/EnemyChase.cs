@@ -11,7 +11,7 @@ public class EnemyChase : MonoBehaviour
     private Transform playerDewasa;
     private Transform playerDewasaMatang;
 
-    private bool isBigFish = false;
+    [SerializeField] bool isBigFish = false;
 
     private void Start()
     {
@@ -19,60 +19,29 @@ public class EnemyChase : MonoBehaviour
         playerRemaja = GameObject.FindGameObjectWithTag("Remaja").transform;
         playerDewasa = GameObject.FindGameObjectWithTag("Dewasa").transform;
         playerDewasaMatang = GameObject.FindGameObjectWithTag("DewasaMatang").transform;
-
-        if (gameObject.CompareTag("BigFish"))
-        {
-            isBigFish = true;
-        }
     }
 
     private void Update()
     {
-        if(!isBigFish)
+        if (!isBigFish)
         {
-            // Check if the player is within the detection radius
-            if (Vector2.Distance(transform.position, player.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-            }
-
-            // Check if the player is within the detection radius
-            else if (Vector2.Distance(transform.position, playerRemaja.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, playerRemaja.position, speed * Time.deltaTime);
-            }
+            ChasePlayer(player);
+            ChasePlayer(playerRemaja);
         }
-        else if(isBigFish)
+        else if (isBigFish)
         {
-            // Check if the player is within the detection radius
-            if (Vector2.Distance(transform.position, player.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-            }
+            ChasePlayer(player);
+            ChasePlayer(playerRemaja);
+            ChasePlayer(playerDewasa);
+            ChasePlayer(playerDewasaMatang);
+        }
+    }
 
-            // Check if the player is within the detection radius
-            else if (Vector2.Distance(transform.position, playerRemaja.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, playerRemaja.position, speed * Time.deltaTime);
-            }
-
-            // Check if the player is within the detection radius
-            else if (Vector2.Distance(transform.position, playerDewasa.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, playerDewasa.position, speed * Time.deltaTime);
-            }
-
-            // Check if the player is within the detection radius
-            else if (Vector2.Distance(transform.position, playerDewasaMatang.position) <= detectionRadius)
-            {
-                // Move towards the player
-                transform.position = Vector2.MoveTowards(transform.position, playerDewasaMatang.position, speed * Time.deltaTime);
-            }
+    private void ChasePlayer(Transform target)
+    {
+        if (target != null && Vector2.Distance(transform.position, target.position) <= detectionRadius)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
     }
 }
