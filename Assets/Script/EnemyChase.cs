@@ -13,7 +13,7 @@ public class EnemyChase : MonoBehaviour
 
     [SerializeField] bool isBigFish = false;
 
-    private void Start()
+    private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Bayi").transform;
         playerRemaja = GameObject.FindGameObjectWithTag("Remaja").transform;
@@ -28,7 +28,8 @@ public class EnemyChase : MonoBehaviour
             ChasePlayer(player);
             ChasePlayer(playerRemaja);
         }
-        else if (isBigFish)
+        
+        if (isBigFish)
         {
             ChasePlayer(player);
             ChasePlayer(playerRemaja);

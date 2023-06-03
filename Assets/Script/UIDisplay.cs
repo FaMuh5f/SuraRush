@@ -13,7 +13,6 @@ public class UIDisplay : MonoBehaviour
 
     [Header("Score")]
     [SerializeField] Slider scoreSlider;
-    // [SerializeField] ScoreKeeper scoreKeeper;
     [SerializeField] ScoreKeeper scoreKeeper;
     [SerializeField] TextMeshProUGUI scoreText;
 
@@ -25,7 +24,6 @@ public class UIDisplay : MonoBehaviour
     void Start()
     {
         healthSlider.maxValue = playerHealth.GetHealth();
-        scoreSlider.maxValue = scoreKeeper.GetScore();
     }
 
     void Update()

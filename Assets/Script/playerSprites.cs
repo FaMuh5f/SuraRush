@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerSprites : MonoBehaviour
 {
 
     [SerializeField] ScoreKeeper scoreKeeper;
-
     [SerializeField] SpriteRenderer spriteRenderer;
-
     [SerializeField] Animator animator;
+    [SerializeField] Slider scoreSlider;
 
     public Sprite bayiSprite;
     public Sprite remajaSprite;
@@ -19,11 +19,15 @@ public class playerSprites : MonoBehaviour
 
     private int score;
 
-    private void Start()
+    void Awake()
     {
-
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
         // Initialize the sprite renderer and set the initial sprite
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
         SetSpriteBasedOnScore();
     }
 
@@ -45,6 +49,7 @@ public class playerSprites : MonoBehaviour
             gameObject.tag = "Megalodon";
             animator.SetBool("isDewasaMatang",false);
             animator.SetBool("isMegalodon",true);
+            scoreSlider.maxValue = 999999;
         }
         else if (score >= 5000)
         {
@@ -53,6 +58,7 @@ public class playerSprites : MonoBehaviour
             gameObject.tag = "DewasaMatang";
             animator.SetBool("isDewasa",false);
             animator.SetBool("isDewasaMatang",true);
+            scoreSlider.maxValue = 7000;
         }
         else if (score >= 3000)
         {
@@ -61,6 +67,7 @@ public class playerSprites : MonoBehaviour
             gameObject.tag = "Dewasa";
             animator.SetBool("isRemaja",false);
             animator.SetBool("isDewasa",true);
+            scoreSlider.maxValue = 5000;
         }
         else if (score >= 1000)
         {
@@ -69,6 +76,7 @@ public class playerSprites : MonoBehaviour
             gameObject.tag = "Remaja";
             // animator.SetBool("isBayi",false);
             animator.SetBool("isRemaja",true);
+            scoreSlider.maxValue = 3000;
         }
         else
         {
@@ -76,6 +84,7 @@ public class playerSprites : MonoBehaviour
             Debug.Log("bayiSprite");
             gameObject.tag = "Bayi";
             // animator.SetBool("isBayi",true);
+            scoreSlider.maxValue = 1000;
         }
     }
 }

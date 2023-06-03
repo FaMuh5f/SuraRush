@@ -49,6 +49,11 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void LoadSettingGame()
+    {
+        SceneManager.LoadScene("SettingsGame");
+    }
+
     IEnumerator WaitAndLoad(string sceneName, float delay)
     {
         yield return new WaitForSeconds(delay);
