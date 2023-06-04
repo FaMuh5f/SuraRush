@@ -156,4 +156,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   detectionRadius: 10
+  isMediumFish: 0
   isBigFish: 1
