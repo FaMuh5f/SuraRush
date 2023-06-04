@@ -17,8 +17,9 @@ public class LevelManager : MonoBehaviour
 
     public void LoadGame()
     {
-        scoreKeeper.ResetScore();
-        cameraSlide.ResetCamera();
+        // scoreKeeper.ResetScore();
+        // cameraSlide.ResetCamera();
+        // cameraSlide.setGame(true);
         SceneManager.LoadScene("Game");
     }
 
@@ -46,6 +47,11 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
+    }
+
+    public void LoadSettingGame()
+    {
+        SceneManager.LoadScene("SettingsGame");
     }
 
     IEnumerator WaitAndLoad(string sceneName, float delay)

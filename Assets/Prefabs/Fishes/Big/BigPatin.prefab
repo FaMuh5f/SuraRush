@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7054528052136601691}
   - component: {fileID: 7054528052136601690}
   - component: {fileID: 6396697563518409141}
+  - component: {fileID: -757485673321514740}
+  - component: {fileID: 1584909256972733637}
   m_Layer: 6
   m_Name: BigPatin
   m_TagString: BigFish
@@ -125,3 +127,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
+--- !u!114 &-757485673321514740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2769b562d7b07db46a631d5a7a08edf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isBigFish: 1
+--- !u!114 &1584909256972733637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2dbab2a489caa4438ca7fca45f7b6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isMediumFish: 0
+  isBigFish: 1

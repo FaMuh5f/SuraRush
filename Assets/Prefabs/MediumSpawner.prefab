@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750296159775998267}
   - component: {fileID: 1750296159775998266}
+  - component: {fileID: 1472006631}
   m_Layer: 6
   m_Name: MediumSpawner
   m_TagString: Untagged
@@ -42,6 +43,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c48ca03ed305a06499f8ef1ac7b327d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7054528052136601689, guid: ec56f00d4d5e4144497ae9137490fda8, type: 3}
+  - {fileID: 7054528052136601689, guid: 979de72144e23dd4085451438d124be9, type: 3}
+  - {fileID: 7054528052136601689, guid: 10dd7bbe8ef56bf49a62086fce28c480, type: 3}
+  - {fileID: 7054528052136601689, guid: 79fc277cf848b3341847160a4d6100fe, type: 3}
+  spawnInterval: 15
+  moveSpeedHorizontal: 1
+  moveSpeedVertical: 1
+  movementRange: 3
+  maxEnemies: 10
+--- !u!114 &1472006631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750296159775998269}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4cd322243053c41aabe506fa1c140e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
