@@ -184,11 +184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483004050912, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483004050912, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483004050912, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -246,6 +246,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9828283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.10360828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582928483465144988, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4582928483465144989, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_text
       value: 'Tubuh Ramping: Tuna memiliki bentuk tubuh yang ramping dan ramping
@@ -253,44 +277,43 @@ PrefabInstance:
         meruncing di kedua ujungnya, sehingga mengurangi hambatan saat mereka bergerak
         di dalam air.
 
-        
 
-        Sisik dan Kulit: Tuna memiliki sisik yang
-        halus dan tumpang tindih yang memberikan perlindungan dan mengurangi gesekan
-        di dalam air. Kulit mereka juga ditutupi lapisan lendir, yang membantu mengurangi
+
+        Sisik dan Kulit: Tuna memiliki sisik yang halus
+        dan tumpang tindih yang memberikan perlindungan dan mengurangi gesekan di
+        dalam air. Kulit mereka juga ditutupi lapisan lendir, yang membantu mengurangi
         hambatan dan meningkatkan efisiensi berenang.
 
-        
 
-        Ekor dan
-        Sirip yang Kuat: Tuna memiliki ekor besar berbentuk bulan sabit yang disebut
-        sirip ekor, yang menyediakan tenaga penggerak utama untuk berenang cepat.
-        Mereka juga memiliki dua sirip punggung dan beberapa sirip kecil lainnya
-        yang membantu kemampuan manuver dan stabilitas.
 
-        
+        Ekor dan Sirip yang
+        Kuat: Tuna memiliki ekor besar berbentuk bulan sabit yang disebut sirip ekor,
+        yang menyediakan tenaga penggerak utama untuk berenang cepat. Mereka juga
+        memiliki dua sirip punggung dan beberapa sirip kecil lainnya yang membantu
+        kemampuan manuver dan stabilitas.
 
-        Berdarah
-        Panas: Tuna adalah salah satu dari sedikit spesies ikan yang sebagian berdarah
-        panas. Mereka memiliki pembuluh darah khusus yang disebut rete mirabile,
-        yang membantu menjaga suhu tubuh mereka di atas suhu air di sekitarnya. Adaptasi
-        ini memungkinkan mereka untuk berenang dengan kecepatan tinggi dan dalam
-        berbagai suhu air.
 
-        
 
-        Desain Hidrodinamika: Tuna memiliki
-        bentuk tubuh fusiform, yang berarti tubuh mereka memanjang dan berbentuk
-        silinder, meruncing ke arah kepala dan ekor. Desain ini mengurangi turbulensi
-        dan hambatan, sehingga memungkinkan mereka untuk berenang dengan lebih efisien.
+        Berdarah Panas: Tuna adalah
+        salah satu dari sedikit spesies ikan yang sebagian berdarah panas. Mereka
+        memiliki pembuluh darah khusus yang disebut rete mirabile, yang membantu
+        menjaga suhu tubuh mereka di atas suhu air di sekitarnya. Adaptasi ini memungkinkan
+        mereka untuk berenang dengan kecepatan tinggi dan dalam berbagai suhu air.
 
-        
 
-        Penglihatan
-        yang tajam: Tuna memiliki penglihatan yang sangat baik, yang disesuaikan
-        dengan gaya hidup pelagis mereka. Mereka memiliki mata yang besar dan berkembang
-        dengan baik yang memungkinkan mereka untuk mendeteksi mangsa dan pemangsa
-        dari jarak jauh di lautan terbuka.'
+
+        Desain
+        Hidrodinamika: Tuna memiliki bentuk tubuh fusiform, yang berarti tubuh mereka
+        memanjang dan berbentuk silinder, meruncing ke arah kepala dan ekor. Desain
+        ini mengurangi turbulensi dan hambatan, sehingga memungkinkan mereka untuk
+        berenang dengan lebih efisien.
+
+
+
+        Penglihatan yang tajam: Tuna memiliki
+        penglihatan yang sangat baik, yang disesuaikan dengan gaya hidup pelagis
+        mereka. Mereka memiliki mata yang besar dan berkembang dengan baik yang memungkinkan
+        mereka untuk mendeteksi mangsa dan pemangsa dari jarak jauh di lautan terbuka.'
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483465144989, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_fontSize
@@ -398,11 +421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483588649469, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483588649469, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483588649469, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -446,11 +469,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483718067215, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483718067215, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4582928483718067215, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -522,11 +545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484300646889, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484300646889, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484300646889, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -578,11 +601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484760436090, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484760436090, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4582928484760436090, guid: 2560445399640c54d8ed09f71be75e91, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -791,27 +814,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 362.5
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 181.25
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110784929085, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110802742704, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_text
@@ -819,7 +842,7 @@ PrefabInstance:
         dengan bentuk yang aerodinamis. Tubuhnya sedikit pipih dari sisi ke sisi
         dan dilengkapi dengan sirip-sirip yang membantu dalam pergerakan dan stabilisasi.
 
-        
+
 
         Warna:
         Ikan bandeng memiliki warna yang bervariasi tergantung pada tahap pertumbuhannya.
@@ -827,27 +850,27 @@ PrefabInstance:
         perak di bagian bawah. Namun, saat menjadi dewasa dan mendekati masa pemijahan,
         warna tubuhnya dapat berubah menjadi lebih gelap.
 
-        
 
-        Sirip:
-        Ikan bandeng memiliki sirip-sirip yang penting untuk pergerakan dan navigasi
-        di dalam air. Mereka memiliki sirip punggung (dorsal fin), sirip perut (ventral
+
+        Sirip: Ikan
+        bandeng memiliki sirip-sirip yang penting untuk pergerakan dan navigasi di
+        dalam air. Mereka memiliki sirip punggung (dorsal fin), sirip perut (ventral
         fin), sirip dada (pectoral fin), dan sirip ekor (caudal fin). Sirip ekor
         mereka memiliki bentuk khas seperti bulan sabit.
 
-        
 
-        Mulut:
-        Bandeng memiliki mulut yang cukup besar yang dilengkapi dengan gigi-gigi
-        kecil. Mulutnya juga bisa sedikit melengkung ke atas.
 
-        
+        Mulut: Bandeng
+        memiliki mulut yang cukup besar yang dilengkapi dengan gigi-gigi kecil. Mulutnya
+        juga bisa sedikit melengkung ke atas.
 
-        Sisik:
-        Tubuh ikan bandeng dilapisi oleh sisik-sisik yang kecil dan teratur. Sisik-sisik
-        ini memberikan perlindungan serta membantu mengurangi gesekan saat berenang.
 
-        
+
+        Sisik: Tubuh ikan bandeng
+        dilapisi oleh sisik-sisik yang kecil dan teratur. Sisik-sisik ini memberikan
+        perlindungan serta membantu mengurangi gesekan saat berenang.
+
+
 
         Habitat:
         Ikan bandeng adalah ikan air tawar yang dapat ditemukan di perairan seperti
@@ -864,29 +887,53 @@ PrefabInstance:
       propertyPath: m_enableAutoSizing
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.98030305
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.100204274
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -60
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -60
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+    - target: {fileID: 8078131110802742705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 501.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 111.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 709.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078131110812128424, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110812128427, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_text
@@ -898,27 +945,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 646.72
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 636.64
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110859266809, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110894258576, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_Name
@@ -926,7 +973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110894258576, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8078131110894258579, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_RootOrder
@@ -974,51 +1021,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 458.34998
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 229.17499
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111137446672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 393.63
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 196.815
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111151975672, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111183537252, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_text
@@ -1034,27 +1081,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 566.37
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 676.815
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111275405435, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358726, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_text
@@ -1066,115 +1113,115 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 767.25415
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 576.3729
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111345358727, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111724711309, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111724711309, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111724711309, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111724711309, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111724711309, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -278.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 313.28
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 156.64
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111786782705, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111814633735, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111814633735, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111814633735, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111814633735, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111814633735, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -167.0625
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 597.5
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 661.25
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834858, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131111840834869, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_text
@@ -1182,87 +1229,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 192.74586
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 111.375
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 96.37293
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112242720706, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112465295120, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112465295120, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112465295120, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112465295120, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112465295120, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -501.1875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112575451764, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112575451764, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112575451764, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112575451764, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112575451764, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55.6875
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112729855212, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112729855212, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112729855212, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112729855212, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 8078131112729855212, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -389.8125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
@@ -1405,44 +1452,68 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -55.6875
       objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.98131317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.10365094
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662463926478371684, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5662463926478371687, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
       propertyPath: m_text
       value: 'Bentuk Tubuh: Ikan patin memiliki tubuh yang memanjang dan silindris.
         Bentuk tubuhnya yang aerodinamis memungkinkannya bergerak dengan efisien
         di dalam air.
 
-        
-
-        Warna: Tubuh ikan patin umumnya berwarna
-        abu-abu hingga perak, dengan perut yang lebih terang. Beberapa spesies mungkin
-        memiliki garis-garis vertikal atau tanda-tanda di sepanjang sisinya, yang
-        dapat bervariasi dalam intensitas dan pola.
 
 
-        Sirip: Ikan patin
-        memiliki beberapa sirip, termasuk sirip punggung, sirip dada, sirip perut,
-        dan sirip dubur. Sirip-sirip ini memberikan stabilitas, keseimbangan, dan
-        manuverabilitas saat berenang.
+        Warna: Tubuh ikan patin umumnya berwarna abu-abu
+        hingga perak, dengan perut yang lebih terang. Beberapa spesies mungkin memiliki
+        garis-garis vertikal atau tanda-tanda di sepanjang sisinya, yang dapat bervariasi
+        dalam intensitas dan pola.
 
 
-        Mulut dan Janggolan: Ikan patin
-        memiliki mulut yang relatif besar yang terletak di bagian bawah kepala. Mereka
-        juga memiliki janggolan yang panjang dan sensitif di dekat mulutnya, yang
-        membantu mereka mencari makanan dengan mendeteksi getaran dan gerakan di
-        dalam air.
+        Sirip: Ikan patin memiliki beberapa
+        sirip, termasuk sirip punggung, sirip dada, sirip perut, dan sirip dubur.
+        Sirip-sirip ini memberikan stabilitas, keseimbangan, dan manuverabilitas
+        saat berenang.
 
-        
 
-        Sisik: Ikan patin memiliki kulit yang halus
-        yang ditutupi oleh sisik-sisik kecil yang tumpang tindih. Sisik-sisik ini
-        memberikan perlindungan dan mengurangi hambatan saat berenang.
+        Mulut dan Janggolan: Ikan patin memiliki mulut yang
+        relatif besar yang terletak di bagian bawah kepala. Mereka juga memiliki
+        janggolan yang panjang dan sensitif di dekat mulutnya, yang membantu mereka
+        mencari makanan dengan mendeteksi getaran dan gerakan di dalam air.
 
-        
 
-        Habitat:
-        Ikan patin umumnya ditemukan di habitat air tawar seperti sungai, danau,
-        dan waduk. Mereka lebih memilih air yang tenang atau perairan dengan aliran
-        yang lambat, di mana mereka dapat mencari perlindungan dan mencari makanan.
+
+        Sisik:
+        Ikan patin memiliki kulit yang halus yang ditutupi oleh sisik-sisik kecil
+        yang tumpang tindih. Sisik-sisik ini memberikan perlindungan dan mengurangi
+        hambatan saat berenang.
+
+
+
+        Habitat: Ikan patin umumnya ditemukan
+        di habitat air tawar seperti sungai, danau, dan waduk. Mereka lebih memilih
+        air yang tenang atau perairan dengan aliran yang lambat, di mana mereka dapat
+        mencari perlindungan dan mencari makanan.
 
 '
       objectReference: {fileID: 0}
@@ -1744,128 +1815,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ba7e9ec1b61ecd4d8c9127d90bfa1be, type: 3}
---- !u!1 &566044585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 566044586}
-  - component: {fileID: 566044588}
-  - component: {fileID: 566044587}
-  - component: {fileID: 566044589}
-  m_Layer: 5
-  m_Name: PrevButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &566044586
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566044585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 746720557}
-  m_Father: {fileID: 1622801252}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.51842463, y: 0.029774413}
-  m_AnchorMax: {x: 0.6166169, y: 0.1287744}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &566044587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566044585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &566044588
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566044585}
-  m_CullTransparentMesh: 1
---- !u!114 &566044589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566044585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 566044587}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &648531266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2299,43 +2248,42 @@ PrefabInstance:
         dan sedikit memadat. Mereka umumnya ramping, memungkinkan mereka untuk bergerak
         di dalam air dengan relatif mudah.
 
-        
 
-        Warna: Ikan kakap
-        sering kali memiliki pola yang cerah dan berwarna-warni. Warnanya dapat berupa
-        corak merah, merah muda, oranye, perak, atau abu-abu, terkadang dengan tanda
-        atau bintik-bintik yang berbeda. Warna juga dapat berubah tergantung pada
-        habitat dan suasana hati mereka.
 
-        
+        Warna: Ikan kakap sering kali
+        memiliki pola yang cerah dan berwarna-warni. Warnanya dapat berupa corak
+        merah, merah muda, oranye, perak, atau abu-abu, terkadang dengan tanda atau
+        bintik-bintik yang berbeda. Warna juga dapat berubah tergantung pada habitat
+        dan suasana hati mereka.
 
-        Mulut dan Gigi: Ikan
-        kakap memiliki mulut yang besar dengan gigi yang tajam yang cocok untuk menangkap
-        dan memakan mangsa. Gigi mereka dirancang untuk menangkap dan memegang ikan
-        yang lebih kecil dan invertebrata.
 
-        
 
-        Sirip: Ikan kakap
-        memiliki berbagai sirip, termasuk sirip punggung, sirip dada, sirip perut,
-        dan sirip dubur. Sirip-sirip ini berkontribusi pada kemampuan manuver dan
-        stabilitas di dalam air.
+        Mulut dan Gigi: Ikan kakap memiliki mulut
+        yang besar dengan gigi yang tajam yang cocok untuk menangkap dan memakan
+        mangsa. Gigi mereka dirancang untuk menangkap dan memegang ikan yang lebih
+        kecil dan invertebrata.
 
-        
 
-        Sisik: Mereka memiliki sisik
-        yang tipis, halus, dan sering kali berbentuk ctenoid (sisik bermata kasar
-        dengan proyeksi seperti gigi kecil). Sisik ini memberikan perlindungan dan
-        mengurangi gesekan saat berenang.
 
-        
+        Sirip: Ikan kakap memiliki berbagai sirip,
+        termasuk sirip punggung, sirip dada, sirip perut, dan sirip dubur. Sirip-sirip
+        ini berkontribusi pada kemampuan manuver dan stabilitas di dalam air.
 
-        Habitat: Ikan kakap
-        umumnya ditemukan di lingkungan laut tropis dan subtropis, termasuk terumbu
-        karang, daerah berbatu, dan padang lamun. Namun, beberapa spesies juga dapat
-        mendiami lingkungan air payau atau bahkan air tawar.
 
-        
+
+        Sisik:
+        Mereka memiliki sisik yang tipis, halus, dan sering kali berbentuk ctenoid
+        (sisik bermata kasar dengan proyeksi seperti gigi kecil). Sisik ini memberikan
+        perlindungan dan mengurangi gesekan saat berenang.
+
+
+
+        Habitat: Ikan
+        kakap umumnya ditemukan di lingkungan laut tropis dan subtropis, termasuk
+        terumbu karang, daerah berbatu, dan padang lamun. Namun, beberapa spesies
+        juga dapat mendiami lingkungan air payau atau bahkan air tawar.
+
+
 
         Perilaku:
         Ikan kakap dapat menyendiri atau membentuk kelompok kecil, tergantung pada
@@ -2350,6 +2298,30 @@ PrefabInstance:
     - target: {fileID: 8088229974398488708, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.98383844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.10185521
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088229974398488711, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
@@ -2369,141 +2341,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8078131110894258576, guid: 27876da1e2c32694fbbf76a81934aaad, type: 3}
   m_PrefabInstance: {fileID: 306153617}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &746720556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 746720557}
-  - component: {fileID: 746720559}
-  - component: {fileID: 746720558}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &746720557
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746720556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 566044586}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &746720558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746720556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Prev
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &746720559
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746720556}
-  m_CullTransparentMesh: 1
 --- !u!1 &859385844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8088229973998959693, guid: 4616b83a0abd01d48a0c61a938c39114, type: 3}
@@ -2834,14 +2671,14 @@ PrefabInstance:
       value: 'Bentuk Tubuh: Ikan nila memiliki tubuh yang agak gepeng dan berbentuk
         oval. Tubuhnya dilapisi oleh sisik-sisik kecil yang tersusun rapi.
 
-        
+
 
         Warna:
         Nila memiliki variasi warna yang cukup luas tergantung pada jenisnya. Umumnya,
         warna tubuhnya berkisar antara keperakan hingga abu-abu kebiruan, dengan
         beberapa bintik atau garis yang lebih gelap di sepanjang sisinya.
 
-        
+
 
         Sirip:
         Ikan nila memiliki beberapa jenis sirip, termasuk sirip punggung (dorsal
@@ -2849,23 +2686,23 @@ PrefabInstance:
         (pectoral fin). Sirip-sirip ini membantu dalam pergerakan dan stabilisasi
         saat berenang.
 
-        
 
-        Mulut: Nila memiliki mulut yang agak
-        kecil dan berbentuk sedikit melengkung. Mulutnya dilengkapi dengan gigi kecil
-        yang membantu dalam mengunyah makanan.
 
-        
+        Mulut: Nila memiliki mulut yang agak kecil dan
+        berbentuk sedikit melengkung. Mulutnya dilengkapi dengan gigi kecil yang
+        membantu dalam mengunyah makanan.
 
-        Skala: Kulit
-        ikan nila ditutupi oleh sisik-sisik kecil yang melindungi tubuhnya. Sisik-sisik
-        ini memiliki pola yang teratur dan mengkilap.
 
-        
 
-        Habitat:
-        Nila adalah ikan air tawar yang umumnya ditemukan di sungai, danau, dan waduk.
-        Mereka cenderung hidup di perairan dengan suhu yang hangat dan bersuhu netral.
+        Skala: Kulit ikan nila ditutupi
+        oleh sisik-sisik kecil yang melindungi tubuhnya. Sisik-sisik ini memiliki
+        pola yang teratur dan mengkilap.
+
+
+
+        Habitat: Nila adalah ikan air
+        tawar yang umumnya ditemukan di sungai, danau, dan waduk. Mereka cenderung
+        hidup di perairan dengan suhu yang hangat dan bersuhu netral.
 
 '
       objectReference: {fileID: 0}
@@ -2876,6 +2713,30 @@ PrefabInstance:
     - target: {fileID: 458203253072352828, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9828283
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.099161625
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458203253072352829, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 458203253090390931, guid: 0d74f91628aceb7458fe9401cd21677d, type: 3}
       propertyPath: m_text
@@ -3039,41 +2900,40 @@ PrefabInstance:
         ini memungkinkan mereka untuk menavigasi melalui vegetasi air dan area perairan
         dangkal.
 
-        
 
-        Sisik dan Warna: Ikan ini memiliki sisik kecil
-        yang tumpang tindih yang memberikan perlindungan. Warna ikan tombro dapat
-        bervariasi, tetapi sering kali memiliki warna abu-abu kusam atau kecoklatan
-        di bagian punggung dan sampingnya, menyatu dengan lingkungannya.
 
-        
+        Sisik dan Warna: Ikan ini memiliki sisik kecil yang tumpang
+        tindih yang memberikan perlindungan. Warna ikan tombro dapat bervariasi,
+        tetapi sering kali memiliki warna abu-abu kusam atau kecoklatan di bagian
+        punggung dan sampingnya, menyatu dengan lingkungannya.
 
-        Sirip
-        Ikan tombro memiliki beberapa sirip, termasuk sirip punggung, sirip dubur,
-        sirip dada, dan sirip perut. Sirip-sirip ini membantu mereka menjaga stabilitas,
+
+
+        Sirip Ikan
+        tombro memiliki beberapa sirip, termasuk sirip punggung, sirip dubur, sirip
+        dada, dan sirip perut. Sirip-sirip ini membantu mereka menjaga stabilitas,
         bermanuver di dalam air, dan mengubah arah.
 
-        
 
-        Mulut dan
-        Gigi: Mereka memiliki mulut kecil dan terminal dengan gigi yang halus seperti
-        sikat. Gigi mereka diadaptasi untuk memakan ganggang, tanaman, dan invertebrata
-        kecil.
 
-        
+        Mulut dan Gigi: Mereka
+        memiliki mulut kecil dan terminal dengan gigi yang halus seperti sikat. Gigi
+        mereka diadaptasi untuk memakan ganggang, tanaman, dan invertebrata kecil.
 
-        Garis Lateral: Ikan Tombro memiliki sistem sensorik
-        yang disebut garis lateral, yang membentang di sepanjang sisi tubuhnya. Garis
-        ini memungkinkan mereka untuk mendeteksi gerakan dan getaran air, membantu
-        mereka menavigasi dan menemukan makanan.
 
-        
 
-        Kuat dan Toleran:
-        Ikan Tombro dikenal karena kemampuan beradaptasi dan ketahanannya terhadap
-        berbagai kondisi lingkungan. Mereka dapat mentolerir berbagai suhu air, tingkat
-        salinitas, dan kualitas air, sehingga cocok untuk akuakultur di berbagai
-        daerah.'
+        Garis
+        Lateral: Ikan Tombro memiliki sistem sensorik yang disebut garis lateral,
+        yang membentang di sepanjang sisi tubuhnya. Garis ini memungkinkan mereka
+        untuk mendeteksi gerakan dan getaran air, membantu mereka menavigasi dan
+        menemukan makanan.
+
+
+
+        Kuat dan Toleran: Ikan Tombro dikenal karena
+        kemampuan beradaptasi dan ketahanannya terhadap berbagai kondisi lingkungan.
+        Mereka dapat mentolerir berbagai suhu air, tingkat salinitas, dan kualitas
+        air, sehingga cocok untuk akuakultur di berbagai daerah.'
       objectReference: {fileID: 0}
     - target: {fileID: 282637429073044764, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
       propertyPath: m_fontSize
@@ -3082,6 +2942,30 @@ PrefabInstance:
     - target: {fileID: 282637429073044764, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.98383844
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.09916161
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -59.999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 282637429073044765, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 282637429412471899, guid: 7049e9bb1054906419d6890a74eb5d75, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3515,7 +3399,7 @@ RectTransform:
   m_Children:
   - {fileID: 1226641863}
   m_Father: {fileID: 1622801252}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9097677, y: 0.9152805}
   m_AnchorMax: {x: 1, y: 1}
@@ -4118,6 +4002,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.98030305
+      objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.10185521
+      objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 368498870953135768, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 368498870953135769, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
       propertyPath: m_text
       value: 'Bentuk Tubuh: Kawakawa memiliki bentuk tubuh yang ramping dan memanjang,
@@ -4125,35 +4033,34 @@ PrefabInstance:
         gelendong), meruncing ke arah kepala dan ekor, yang memungkinkan mereka untuk
         berenang dan bermanuver secara efisien.
 
-        
 
-        Warna: Bagian
-        atas tubuh berwarna biru metalik gelap hingga biru kehijauan, sedangkan sisi
-        bawah dan perut berwarna putih keperakan. Kawakawa memiliki beberapa garis
-        vertikal di sepanjang sisi tubuhnya, yang dapat bervariasi dalam intensitas
-        tergantung pada individu dan suasana hati mereka.
 
-        
+        Warna: Bagian atas tubuh
+        berwarna biru metalik gelap hingga biru kehijauan, sedangkan sisi bawah dan
+        perut berwarna putih keperakan. Kawakawa memiliki beberapa garis vertikal
+        di sepanjang sisi tubuhnya, yang dapat bervariasi dalam intensitas tergantung
+        pada individu dan suasana hati mereka.
 
-        Sirip
-        Mereka memiliki dua sirip punggung, dengan sirip pertama lebih besar dan
-        berduri. Kawakawa juga memiliki sirip dada, sirip perut, dan sirip ekor yang
-        besar, yang membantu mereka berenang dengan cepat dan bermanuver.
 
-        
 
-        Gigi:
-        Kawakawa memiliki gigi yang tajam, yang mereka gunakan untuk menangkap dan
-        mencabik-cabik mangsanya.
+        Sirip Mereka memiliki dua
+        sirip punggung, dengan sirip pertama lebih besar dan berduri. Kawakawa juga
+        memiliki sirip dada, sirip perut, dan sirip ekor yang besar, yang membantu
+        mereka berenang dengan cepat dan bermanuver.
 
-        
 
-        Distribusi: Mereka ditemukan
-        di perairan hangat dan tropis di wilayah Indo-Pasifik, termasuk Samudra Hindia
-        dan Samudra Pasifik Barat. Mereka umumnya ditemukan di daerah pesisir dan
-        di sekitar terumbu karang.
 
-        
+        Gigi: Kawakawa memiliki
+        gigi yang tajam, yang mereka gunakan untuk menangkap dan mencabik-cabik mangsanya.
+
+
+
+        Distribusi:
+        Mereka ditemukan di perairan hangat dan tropis di wilayah Indo-Pasifik, termasuk
+        Samudra Hindia dan Samudra Pasifik Barat. Mereka umumnya ditemukan di daerah
+        pesisir dan di sekitar terumbu karang.
+
+
 
         Perilaku berkelompok: Kawakawa
         sering berenang berkelompok, terutama saat mereka mencari makan atau bermigrasi.
@@ -4326,6 +4233,127 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095262f2ed5a34143b7c8089a0231f41, type: 3}
+--- !u!1 &1495259541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495259542}
+  - component: {fileID: 1495259544}
+  - component: {fileID: 1495259543}
+  - component: {fileID: 1495259545}
+  m_Layer: 5
+  m_Name: PrevButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1495259542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495259541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1622801252}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.529495, y: 0.04054882}
+  m_AnchorMax: {x: 0.57447475, y: 0.09028507}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1495259543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495259541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 84f93f79bf820294ba1fc5589986c460, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1495259544
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495259541}
+  m_CullTransparentMesh: 1
+--- !u!114 &1495259545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495259541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1495259543}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1570996534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4392,7 @@ MonoBehaviour:
   - {fileID: 1158492618}
   - {fileID: 169237592}
   - {fileID: 714514294}
-  previousButton: {fileID: 566044589}
+  previousButton: {fileID: 1495259545}
   nextButton: {fileID: 1777147985}
 --- !u!4 &1570996536
 Transform:
@@ -4381,141 +4409,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1616291993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616291994}
-  - component: {fileID: 1616291996}
-  - component: {fileID: 1616291995}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1616291994
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616291993}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1777147988}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1616291995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616291993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Next
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1616291996
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616291993}
-  m_CullTransparentMesh: 1
 --- !u!1 &1622801251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,8 +4441,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1777147988}
-  - {fileID: 566044586}
   - {fileID: 1200765412}
+  - {fileID: 1495259542}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4786,8 +4679,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4d4717c04d43b6740979038bd1c87969, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4815,13 +4708,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1616291994}
+  m_Children: []
   m_Father: {fileID: 1622801252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.883, y: 0.029774413}
-  m_AnchorMax: {x: 0.9813333, y: 0.1287744}
+  m_AnchorMin: {x: 0.93051517, y: 0.04054882}
+  m_AnchorMax: {x: 0.9762828, y: 0.09028507}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4892,39 +4784,38 @@ PrefabInstance:
         tubuh ini memungkinkan mereka untuk menavigasi dengan mudah melalui vegetasi
         yang lebat di habitat aslinya.
 
-        
 
-        Sirip Ikan gurami memiliki
-        beberapa sirip, termasuk sirip punggung, sirip dubur, sirip dada, dan sirip
-        perut. Sirip-sirip ini membantu mereka dalam hal stabilitas, kemudi, dan
-        manuver saat berenang.
 
-        
+        Sirip Ikan gurami memiliki beberapa
+        sirip, termasuk sirip punggung, sirip dubur, sirip dada, dan sirip perut.
+        Sirip-sirip ini membantu mereka dalam hal stabilitas, kemudi, dan manuver
+        saat berenang.
 
-        Warna: Ikan gurami menunjukkan
-        berbagai macam warna dan pola, yang dapat bervariasi di antara spesies yang
-        berbeda dan bahkan di dalam spesies yang sama. Mereka dapat menampilkan warna
-        merah, biru, hijau, oranye, dan kuning yang cerah, sering kali dengan pola
-        yang rumit dan warna-warni.
 
-        
 
-        Organ Labirin: Mirip dengan
-        ikan gurame, ikan gurami memiliki organ labirin. Organ ini memungkinkan mereka
-        menghirup udara atmosfer dengan menghirup oksigen dari permukaan, selain
-        menggunakan insang untuk mengekstrak oksigen dari air. Adaptasi ini memungkinkan
-        mereka untuk bertahan hidup di lingkungan yang kekurangan oksigen seperti
-        perairan yang tergenang atau kurang oksigen.
+        Warna: Ikan gurami menunjukkan berbagai macam warna
+        dan pola, yang dapat bervariasi di antara spesies yang berbeda dan bahkan
+        di dalam spesies yang sama. Mereka dapat menampilkan warna merah, biru, hijau,
+        oranye, dan kuning yang cerah, sering kali dengan pola yang rumit dan warna-warni.
 
-        
 
-        Mulut dan
-        Barbel: Ikan gurami memiliki mulut kecil yang diposisikan di bagian bawah
+
+        Organ
+        Labirin: Mirip dengan ikan gurame, ikan gurami memiliki organ labirin. Organ
+        ini memungkinkan mereka menghirup udara atmosfer dengan menghirup oksigen
+        dari permukaan, selain menggunakan insang untuk mengekstrak oksigen dari
+        air. Adaptasi ini memungkinkan mereka untuk bertahan hidup di lingkungan
+        yang kekurangan oksigen seperti perairan yang tergenang atau kurang oksigen.
+
+
+
+        Mulut
+        dan Barbel: Ikan gurami memiliki mulut kecil yang diposisikan di bagian bawah
         kepala mereka. Beberapa spesies juga memiliki pelengkap sensorik kecil yang
         disebut barbel di dekat mulut mereka. Duri ini membantu mereka menemukan
         makanan dengan merasakan getaran dan gerakan di dalam air.
 
-        
+
 
         Sisik:
         Ikan gurami memiliki sisik yang menutupi tubuh mereka, memberikan perlindungan
@@ -4937,6 +4828,30 @@ PrefabInstance:
     - target: {fileID: 7410277386683692267, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.979798
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.09900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410277386683692268, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7410277386814345584, guid: 4329852f35c98cd47aa1e1a239dde942, type: 3}
       propertyPath: m_AnchorMax.y
