@@ -11,14 +11,17 @@ public class playerMovement : MonoBehaviour
     [SerializeField]  float cameraMovementSpeed = 1f;
 
     [SerializeField] private float currentMoveSpeed;
-    private bool isPowerupActive = false;
+    private bool isSpeedPowerupActive = false;
     private Coroutine powerupCoroutine;
     
     public bool isAlive = true;
+    public static bool isInvincible = false;
+    public bool isPower = false;
 
     private float minX, maxX, minY, maxY;
     private float playerWidth, playerHeight;
     private float cameraOffsetX;
+    private string originalTag;
 
     private void Start()
     {
@@ -59,40 +62,60 @@ public class playerMovement : MonoBehaviour
 
         if (isAlive)
         {
-        // Move the player to the new position
-        transform.position = newPosition;
+            // Move the player to the new position
+            transform.position = newPosition;
         }
     }
 
     float GetMoveSpeed()
     {
-        return isPowerupActive ? increasedMoveSpeed : normalMoveSpeed;
+        return isSpeedPowerupActive ? increasedMoveSpeed : normalMoveSpeed;
     }
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PowerUp"))
+        if (other.CompareTag("SpeedPowerUp"))
         {
-            if (!isPowerupActive)
+            if (!isSpeedPowerupActive)
             {
-                isPowerupActive = true;
-                powerupCoroutine = StartCoroutine(ActivatePowerup());
+                isSpeedPowerupActive = true;
+                powerupCoroutine = StartCoroutine(ActivateSpeedPowerup());
+                Destroy(other.gameObject);
+            }
+        }
+
+        if (other.CompareTag("PowerPowerUp"))
+        {
+            if (!isPower)
+            {
+                isPower = true;
+                powerupCoroutine = StartCoroutine(ActivatePowerPowerup());
+                Destroy(other.gameObject);
+            }
+        }
+
+        if (other.CompareTag("InvinciblePowerUp"))
+        {
+            if (!isInvincible)
+            {
+                isInvincible = true;
+                powerupCoroutine = StartCoroutine(ActivateInvinciblePowerup());
                 Destroy(other.gameObject);
             }
         }
     }
 
-    private IEnumerator ActivatePowerup()
+    private IEnumerator ActivateSpeedPowerup()
     {
         currentMoveSpeed = increasedMoveSpeed;
 
         yield return new WaitForSeconds(powerupDuration);
 
         StopCoroutine(powerupCoroutine);
-        StartCoroutine(DeactivatePowerup());
+        StartCoroutine(DeactivateSpeedPowerup());
     }
 
-    private IEnumerator DeactivatePowerup()
+    private IEnumerator DeactivateSpeedPowerup()
     {
         while (currentMoveSpeed > normalMoveSpeed)
         {
@@ -101,11 +124,53 @@ public class playerMovement : MonoBehaviour
         }
 
         currentMoveSpeed = normalMoveSpeed;
-        isPowerupActive = false;
+        isSpeedPowerupActive = false;
+    }
+
+    private IEnumerator ActivatePowerPowerup()
+    {
+        originalTag = gameObject.tag;
+
+        gameObject.tag = "Megalodon";
+
+        yield return new WaitForSeconds(powerupDuration);
+
+        StopCoroutine(powerupCoroutine);
+        StartCoroutine(DeactivatePowerPowerup());
+    }
+
+    private IEnumerator DeactivatePowerPowerup()
+    {
+        gameObject.tag = originalTag;
+        isPower = false;
+
+        yield break;
+    }
+
+    private IEnumerator ActivateInvinciblePowerup()
+    {
+        isInvincible = true;
+
+        yield return new WaitForSeconds(powerupDuration);
+
+        StopCoroutine(powerupCoroutine);
+        StartCoroutine(DeactivateInvinciblePowerup());
+    }
+
+    private IEnumerator DeactivateInvinciblePowerup()
+    {
+        isInvincible = false;
+
+        yield break;
     }
 
     public void setAlive(bool parameter)
     {
         isAlive = parameter;
+    }
+
+    public static bool getInvicible()
+    {
+        return isInvincible;
     }
 }

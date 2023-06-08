@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57867757222052323}
-  - component: {fileID: 57867757222052322}
-  - component: {fileID: 42792046}
+  - component: {fileID: 612900341}
+  - component: {fileID: 669148096}
   m_Layer: 8
   m_Name: TrashSpawner
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &57867757222052322
+--- !u!114 &612900341
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,38 +42,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 57867757222052325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48ca03ed305a06499f8ef1ac7b327d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 03dba7001d99df948b4964626b59aee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 8758511617065350986, guid: 086492d525491ed41beab96d560a45df, type: 3}
   - {fileID: 8758511617065350986, guid: cb6263afde4111d47ae3b920df24314a, type: 3}
-  - {fileID: 8758511617065350986, guid: 35f1d7818a9dbb94ea04170e32e8b3cc, type: 3}
   - {fileID: 8758511617065350986, guid: f74576854541e3a44b9dfa233013f2b9, type: 3}
   spawnInterval: 10
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
   movementRange: 3
   maxEnemies: 10
---- !u!114 &42792046
+--- !u!114 &669148096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57867757222052325}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3179a972fd4882c4ba4543212752d6d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 03dba7001d99df948b4964626b59aee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 8758511617065350986, guid: 086492d525491ed41beab96d560a45df, type: 3}
-  - {fileID: 8758511617065350986, guid: cb6263afde4111d47ae3b920df24314a, type: 3}
   - {fileID: 8758511617065350986, guid: 35f1d7818a9dbb94ea04170e32e8b3cc, type: 3}
-  - {fileID: 8758511617065350986, guid: f74576854541e3a44b9dfa233013f2b9, type: 3}
-  spawnInterval: 10
+  spawnInterval: 30
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
-  movementRange: 3
+  movementRange: 0
   maxEnemies: 10

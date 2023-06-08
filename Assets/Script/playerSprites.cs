@@ -45,7 +45,7 @@ public class playerSprites : MonoBehaviour
         if (score >= 7000)
         {
             // spriteRenderer.sprite = megalodonSprite; // Set the Megamouth sprite for score >= 7000
-            Debug.Log("megalodonSprite");
+            // Debug.Log("megalodonSprite");
             gameObject.tag = "Megalodon";
             animator.SetBool("isDewasaMatang",false);
             animator.SetBool("isMegalodon",true);
@@ -54,7 +54,7 @@ public class playerSprites : MonoBehaviour
         else if (score >= 5000)
         {
             // spriteRenderer.sprite = dewasaMatangSprite; // Set the Dewasa-Matang sprite for score >= 5000
-            Debug.Log("dewasaMatangSprite");
+            // Debug.Log("dewasaMatangSprite");
             gameObject.tag = "DewasaMatang";
             animator.SetBool("isDewasa",false);
             animator.SetBool("isDewasaMatang",true);
@@ -63,7 +63,7 @@ public class playerSprites : MonoBehaviour
         else if (score >= 3000)
         {
             // spriteRenderer.sprite = dewasaSprite; // Set the Dewasa sprite for score >= 3000
-            Debug.Log("dewasaSprite");
+            // Debug.Log("dewasaSprite");
             gameObject.tag = "Dewasa";
             animator.SetBool("isRemaja",false);
             animator.SetBool("isDewasa",true);
@@ -72,7 +72,7 @@ public class playerSprites : MonoBehaviour
         else if (score >= 1000)
         {
             // spriteRenderer.sprite = remajaSprite; // Set the Remaja sprite for score >= 1000
-            Debug.Log("remajaSprite");
+            // Debug.Log("remajaSprite");
             gameObject.tag = "Remaja";
             // animator.SetBool("isBayi",false);
             animator.SetBool("isRemaja",true);
@@ -81,7 +81,7 @@ public class playerSprites : MonoBehaviour
         else
         {
             // spriteRenderer.sprite = bayiSprite; // Set the Bayi sprite for score < 1000
-            Debug.Log("bayiSprite");
+            // Debug.Log("bayiSprite");
             gameObject.tag = "Bayi";
             // animator.SetBool("isBayi",true);
             scoreSlider.maxValue = 1000;
