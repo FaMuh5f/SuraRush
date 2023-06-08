@@ -23,6 +23,22 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void LoadSingelMulti()
+    {
+        // scoreKeeper.ResetScore();
+        // cameraSlide.ResetCamera();
+        // cameraSlide.setGame(true);
+        SceneManager.LoadScene("SingelMulti");
+    }
+
+    public void LoadGameMulti()
+    {
+        // scoreKeeper.ResetScore();
+        // cameraSlide.ResetCamera();
+        // cameraSlide.setGame(true);
+        SceneManager.LoadScene("GameMulti");
+    }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -41,6 +57,11 @@ public class LevelManager : MonoBehaviour
     public void LoadGameOver()
     {
         StartCoroutine(WaitAndLoad("GameOver", sceneLoadDelay));
+    }
+
+    public void LoadGameOverMulti()
+    {
+        StartCoroutine(WaitAndLoad("GameOverMulti", sceneLoadDelay));
     }
 
     public void QuitGame()

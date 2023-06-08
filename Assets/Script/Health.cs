@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
 
     [SerializeField] Animator animator;
 
+    private bool isInvincible;
+
     ScoreKeeper scoreKeeper;
     LevelManager levelManager;
     playerMovement PlayerMovement;
@@ -21,104 +23,112 @@ public class Health : MonoBehaviour
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         levelManager = FindObjectOfType<LevelManager>();
         PlayerMovement = FindObjectOfType<playerMovement>();
+
+    }
+
+    void Update() 
+    {
+        isInvincible = playerMovement.getInvicible();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
 
-        if(gameObject.CompareTag("Bayi") || gameObject.CompareTag("Remaja"))
+        if(!isInvincible)
         {
-            if (other.tag == "Fish")
+            if(gameObject.CompareTag("Bayi") || gameObject.CompareTag("Remaja"))
             {
-                animator.SetBool("isEating",true);
-                animator.SetBool("isEatingRemaja",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating());   
-            }
+                if (other.tag == "Fish")
+                {
+                    animator.SetBool("isEating",true);
+                    animator.SetBool("isEatingRemaja",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating());   
+                }
 
-            if (other.tag == "MediumFish" && isPlayer)
+                if (other.tag == "MediumFish" && isPlayer)
+                {
+                    animator.SetBool("isDamage",true);
+                    animator.SetBool("isDamageRemaja",true);
+                    TakeDamage(damageDealer.GetDamage());
+                    StartCoroutine(ResetIsDamage());
+                }
+
+                if (other.tag == "BigFish" && isPlayer)
+                {
+                    animator.SetBool("isDamage",true);
+                    animator.SetBool("isDamageRemaja",true);
+                    TakeDamage(damageDealer.GetDamage());
+                    StartCoroutine(ResetIsDamage());
+                }
+            }else if(gameObject.CompareTag("Dewasa") || gameObject.CompareTag("DewasaMatang"))
             {
+                if (other.tag == "Fish")
+                {
+                    animator.SetBool("isEatingDewasa",true);
+                    animator.SetBool("isEatingDewasaMatang",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating());    
+                }
+
+                if (other.tag == "MediumFish" && isPlayer)
+                {
+                    animator.SetBool("isEatingDewasa",true);
+                    animator.SetBool("isEatingDewasaMatang",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating()); 
+                }
+
+                if (other.tag == "BigFish" && isPlayer)
+                {
+                    animator.SetBool("isDamageDewasa",true);
+                    animator.SetBool("isDamageDewasaMatang",true);
+                    TakeDamage(damageDealer.GetDamage());
+                    StartCoroutine(ResetIsDamage());
+                }
+            }else if(gameObject.CompareTag("Megalodon"))
+            {
+                if (other.tag == "Fish")
+                {
+                    animator.SetBool("isEatingMegalodon",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating());    
+                }
+
+                if (other.tag == "MediumFish" && isPlayer)
+                {
+                    animator.SetBool("isEatingMegalodon",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating()); 
+                }
+
+                if (other.tag == "BigFish" && isPlayer)
+                {
+                    animator.SetBool("isEatingMegalodon",true);
+                    Destroy(other.gameObject);
+                    scoreKeeper.ModifyScore(score);
+                    StartCoroutine(ResetIsEating());
+                }
+            }
+        
+            if (other.tag == "Trash")
+            {
+                // Destroy(other.gameObject);
                 animator.SetBool("isDamage",true);
                 animator.SetBool("isDamageRemaja",true);
-                TakeDamage(damageDealer.GetDamage());
-                StartCoroutine(ResetIsDamage());
-            }
-
-            if (other.tag == "BigFish" && isPlayer)
-            {
-                animator.SetBool("isDamage",true);
-                animator.SetBool("isDamageRemaja",true);
-                TakeDamage(damageDealer.GetDamage());
-                StartCoroutine(ResetIsDamage());
-            }
-        }else if(gameObject.CompareTag("Dewasa") || gameObject.CompareTag("DewasaMatang"))
-        {
-            if (other.tag == "Fish")
-            {
-                animator.SetBool("isEatingDewasa",true);
-                animator.SetBool("isEatingDewasaMatang",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating());    
-            }
-
-            if (other.tag == "MediumFish" && isPlayer)
-            {
-                animator.SetBool("isEatingDewasa",true);
-                animator.SetBool("isEatingDewasaMatang",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating()); 
-            }
-
-            if (other.tag == "BigFish" && isPlayer)
-            {
                 animator.SetBool("isDamageDewasa",true);
                 animator.SetBool("isDamageDewasaMatang",true);
+                animator.SetBool("isDamageMegalodon",true);
                 TakeDamage(damageDealer.GetDamage());
+                damageDealer.Hit();
                 StartCoroutine(ResetIsDamage());
             }
-        }else if(gameObject.CompareTag("Megalodon"))
-        {
-            if (other.tag == "Fish")
-            {
-                animator.SetBool("isEatingMegalodon",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating());    
-            }
-
-            if (other.tag == "MediumFish" && isPlayer)
-            {
-                animator.SetBool("isEatingMegalodon",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating()); 
-            }
-
-            if (other.tag == "BigFish" && isPlayer)
-            {
-                animator.SetBool("isEatingMegalodon",true);
-                Destroy(other.gameObject);
-                scoreKeeper.ModifyScore(score);
-                StartCoroutine(ResetIsEating());
-            }
-        }
-        
-
-        if (other.tag == "Trash")
-        {
-            // Destroy(other.gameObject);
-            animator.SetBool("isDamage",true);
-            animator.SetBool("isDamageRemaja",true);
-            animator.SetBool("isDamageDewasa",true);
-            animator.SetBool("isDamageDewasaMatang",true);
-            animator.SetBool("isDamageMegalodon",true);
-            TakeDamage(damageDealer.GetDamage());
-            damageDealer.Hit();
-            StartCoroutine(ResetIsDamage());
         }
     }
 
@@ -132,6 +142,7 @@ public class Health : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            isPlayer = false;
             Die();
         }
     }
@@ -171,5 +182,10 @@ public class Health : MonoBehaviour
         animator.SetBool("isDamageDewasa",false);
         animator.SetBool("isDamageDewasaMatang",false);
         animator.SetBool("isDamageMegalodon",false);
+    }
+
+    public bool GetPlayer()
+    {
+        return isPlayer;
     }
 }

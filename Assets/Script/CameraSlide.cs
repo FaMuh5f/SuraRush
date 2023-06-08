@@ -63,6 +63,9 @@ public class CameraSlide : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         // Compare the scene name with the desired scene
-        isGame = currentScene.name == "Game";
+        if(currentScene.name == "Game" || currentScene.name == "GameMulti")
+        {
+            isGame = true;
+        }
     }
 }

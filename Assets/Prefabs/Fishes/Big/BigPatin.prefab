@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6396697563518409141}
   - component: {fileID: 1584909256972733637}
   - component: {fileID: 2619275950754256287}
+  - component: {fileID: -3500122288713073435}
   m_Layer: 6
   m_Name: BigPatin
   m_TagString: BigFish
@@ -155,6 +156,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2769b562d7b07db46a631d5a7a08edf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0.5
   detectionRadius: 10
   isBigFish: 0
+--- !u!114 &-3500122288713073435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c55f0ac84d300f469a473f049f6f4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isMediumFish: 0
+  isBigFish: 1

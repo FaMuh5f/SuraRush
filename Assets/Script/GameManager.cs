@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     ScoreKeeper scoreKeeper;
+    ScoreKeeper2 scoreKeeper2;
     CameraSlide cameraSlide;
     Spawner spawner;
 
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        scoreKeeper2 = FindObjectOfType<ScoreKeeper2>();
         cameraSlide = FindObjectOfType<CameraSlide>();
         spawner = FindObjectOfType<Spawner>();
     }
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
         cameraSlide.ResetCamera();
         spawner.ResetSpawner();
         scoreKeeper.ResetScore();
+        scoreKeeper2.ResetScore2();
         // ResetCameraPosition();
         // cameraSlide.setGame(true);
     }

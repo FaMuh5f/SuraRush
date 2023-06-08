@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUpSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;  // Array of enemy prefabs
     public float spawnInterval = 2f;  // Time interval between each enemy spawn
@@ -14,8 +14,13 @@ public class PowerUpSpawner : MonoBehaviour
     private int spawnedEnemies = 0;  // Counter for spawned enemies
     private bool isMovingUp = true;  // Flag to determine if the spawner is moving up or down
 
+    private Vector3 initialPosition;  // Initial position of the spawner
+
     private void Start()
     {
+        // Store the initial position of the spawner
+        initialPosition = transform.position;
+        
         // Start spawning enemies and moving the spawner
         StartCoroutine(SpawnEnemies());
         StartCoroutine(MoveSpawner());
@@ -68,7 +73,9 @@ public class PowerUpSpawner : MonoBehaviour
         GameObject[] mediumEnemies = GameObject.FindGameObjectsWithTag("MediumFish");
         GameObject[] bigEnemies = GameObject.FindGameObjectsWithTag("BigFish");
         GameObject[] trashes = GameObject.FindGameObjectsWithTag("Trash");
-        GameObject[] powerUps = GameObject.FindGameObjectsWithTag("PowerUp");
+        GameObject[] powerUps = GameObject.FindGameObjectsWithTag("SpeedPowerUp");
+        GameObject[] powerPowerUps = GameObject.FindGameObjectsWithTag("PowerPowerUp");
+        GameObject[] inviciblePowerUps = GameObject.FindGameObjectsWithTag("InviciblePowerUp");
         foreach (GameObject enemy in enemies)
         {
             Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
@@ -123,5 +130,37 @@ public class PowerUpSpawner : MonoBehaviour
                 spawnedEnemies--;
             }
         }
+
+        foreach (GameObject enemy in powerPowerUps)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+
+        foreach (GameObject enemy in inviciblePowerUps)
+        {
+            Vector3 enemyScreenPos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+            if (enemyScreenPos.x < 0)
+            {
+                // Destroy enemy if it's past the left side of the camera
+                Destroy(enemy);
+                spawnedEnemies--;
+            }
+        }
+    }
+
+    public void ResetSpawner()
+    {
+        // Reset the position of the spawner to its initial position
+        transform.position = initialPosition;
+
+        // Reset any other variables or states if needed
+        spawnedEnemies = 0;
+        isMovingUp = true;
     }
 }
