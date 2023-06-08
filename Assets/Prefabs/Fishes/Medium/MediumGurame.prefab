@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2016969243460973815}
   - component: {fileID: -7944639432373415035}
   - component: {fileID: -5271122119155168792}
+  - component: {fileID: 321875491355140081}
   m_Layer: 6
   m_Name: MediumGurame
   m_TagString: MediumFish
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2769b562d7b07db46a631d5a7a08edf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0.5
   detectionRadius: 10
   isBigFish: 0
 --- !u!114 &-5271122119155168792
@@ -174,4 +175,19 @@ MonoBehaviour:
   speed: 0.5
   detectionRadius: 10
   isMediumFish: 1
+  isBigFish: 0
+--- !u!114 &321875491355140081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437ade4fc3f01d64292b0242fb2ee2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
   isBigFish: 0

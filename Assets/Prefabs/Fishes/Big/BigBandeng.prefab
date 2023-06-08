@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -6097199165408005757}
   - component: {fileID: -6377875616249195337}
   - component: {fileID: -3854526508397024524}
+  - component: {fileID: 6791548521380244178}
   m_Layer: 6
   m_Name: BigBandeng
   m_TagString: BigFish
@@ -158,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   detectionRadius: 10
-  isBigFish: 0
+  isBigFish: 1
 --- !u!114 &-3854526508397024524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +176,18 @@ MonoBehaviour:
   detectionRadius: 10
   isMediumFish: 0
   isBigFish: 1
+--- !u!114 &6791548521380244178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437ade4fc3f01d64292b0242fb2ee2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isBigFish: 0
