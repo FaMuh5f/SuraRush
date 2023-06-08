@@ -187,6 +187,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1639838627, guid: cfa75fe8aa356964d9cc5cd1c8557dd1, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639838627, guid: cfa75fe8aa356964d9cc5cd1c8557dd1, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 19bf5ce7697cb7646b7e3eb0a546c489, type: 3}
+    - target: {fileID: 1639838627, guid: cfa75fe8aa356964d9cc5cd1c8557dd1, type: 3}
+      propertyPath: enemyPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 790800aedbd70814e838abe95c5a4fd8, type: 3}
     - target: {fileID: 1750296159775998267, guid: cfa75fe8aa356964d9cc5cd1c8557dd1, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1245,6 +1257,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1007850709, guid: 6157570551f22c64fa08d20ce988edf4, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007850709, guid: 6157570551f22c64fa08d20ce988edf4, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 979de72144e23dd4085451438d124be9, type: 3}
+    - target: {fileID: 1007850709, guid: 6157570551f22c64fa08d20ce988edf4, type: 3}
+      propertyPath: enemyPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 79fc277cf848b3341847160a4d6100fe, type: 3}
+    - target: {fileID: 1007850709, guid: 6157570551f22c64fa08d20ce988edf4, type: 3}
+      propertyPath: enemyPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 895d3c88fa32d3844b886452bc543073, type: 3}
     - target: {fileID: 1750296159775998267, guid: 6157570551f22c64fa08d20ce988edf4, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5024,6 +5052,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 148500992, guid: 05245d63118d0b342a51a65ac4544301, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 148500992, guid: 05245d63118d0b342a51a65ac4544301, type: 3}
+      propertyPath: enemyPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: 736ab4e9c5eac6d43ac5c672b7bc2907, type: 3}
+    - target: {fileID: 148500992, guid: 05245d63118d0b342a51a65ac4544301, type: 3}
+      propertyPath: enemyPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7054528052136601689, guid: c8fbde64a6d70564fa68cb108cd79fec, type: 3}
     - target: {fileID: 1750296159775998267, guid: 05245d63118d0b342a51a65ac4544301, type: 3}
       propertyPath: m_RootOrder
       value: 10

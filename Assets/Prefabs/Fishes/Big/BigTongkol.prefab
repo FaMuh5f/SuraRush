@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7458901141342376859}
   - component: {fileID: -1630686762598701842}
   - component: {fileID: -8224516887745535629}
+  - component: {fileID: 3604440579512873495}
   m_Layer: 6
   m_Name: BigTongkol
   m_TagString: BigFish
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777f3c9b8b0ed2e4ea1e28d6bc548520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 20
 --- !u!114 &7458901141342376859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   detectionRadius: 10
-  isBigFish: 0
+  isBigFish: 1
 --- !u!114 &-8224516887745535629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +176,18 @@ MonoBehaviour:
   detectionRadius: 10
   isMediumFish: 0
   isBigFish: 1
+--- !u!114 &3604440579512873495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437ade4fc3f01d64292b0242fb2ee2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isBigFish: 0
