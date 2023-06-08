@@ -142,6 +142,7 @@ public class Health : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            isPlayer = false;
             Die();
         }
     }
@@ -181,5 +182,10 @@ public class Health : MonoBehaviour
         animator.SetBool("isDamageDewasa",false);
         animator.SetBool("isDamageDewasaMatang",false);
         animator.SetBool("isDamageMegalodon",false);
+    }
+
+    public bool GetPlayer()
+    {
+        return isPlayer;
     }
 }

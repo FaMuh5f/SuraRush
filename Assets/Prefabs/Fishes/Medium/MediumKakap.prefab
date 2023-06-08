@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1849490995539918769}
   - component: {fileID: 5420521726434322617}
   - component: {fileID: -7165000962040230907}
+  - component: {fileID: -9089286326407268819}
   m_Layer: 6
   m_Name: MediumKakap
   m_TagString: MediumFish
@@ -157,4 +158,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   detectionRadius: 10
+  isBigFish: 0
+--- !u!114 &-9089286326407268819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c55f0ac84d300f469a473f049f6f4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  detectionRadius: 10
+  isMediumFish: 1
   isBigFish: 0

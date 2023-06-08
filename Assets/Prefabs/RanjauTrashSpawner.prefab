@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &57867757222052325
+--- !u!1 &134230874055654937
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 57867757222052323}
-  - component: {fileID: 669148096}
+  - component: {fileID: 134230874055654943}
+  - component: {fileID: 76970417129200700}
   m_Layer: 8
-  m_Name: TrashSpawner
+  m_Name: RanjauTrashSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &57867757222052323
+--- !u!4 &134230874055654943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57867757222052325}
+  m_GameObject: {fileID: 134230874055654937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.44, y: -3.79, z: 0}
+  m_LocalPosition: {x: 12.3, y: 3.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &669148096
+--- !u!114 &76970417129200700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57867757222052325}
+  m_GameObject: {fileID: 134230874055654937}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03dba7001d99df948b4964626b59aee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 8758511617065350986, guid: 086492d525491ed41beab96d560a45df, type: 3}
-  - {fileID: 8758511617065350986, guid: cb6263afde4111d47ae3b920df24314a, type: 3}
-  - {fileID: 8758511617065350986, guid: f74576854541e3a44b9dfa233013f2b9, type: 3}
-  spawnInterval: 5
+  - {fileID: 8758511617065350986, guid: 35f1d7818a9dbb94ea04170e32e8b3cc, type: 3}
+  spawnInterval: 30
   moveSpeedHorizontal: 1
-  moveSpeedVertical: 1
-  movementRange: 5
+  moveSpeedVertical: 0
+  movementRange: 0
   maxEnemies: 10

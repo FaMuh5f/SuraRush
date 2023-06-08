@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 9054566400632690471}
   - component: {fileID: 9054566400632690469}
   - component: {fileID: 9054566400632690522}
-  - component: {fileID: 9054566400632690523}
-  - component: {fileID: 9054566400632690470}
-  - component: {fileID: 7729104164724128932}
   - component: {fileID: 6911496985364211786}
-  - component: {fileID: 6911496985364211787}
   - component: {fileID: 1031626483}
+  - component: {fileID: 1150015487}
+  - component: {fileID: 1150015497}
+  - component: {fileID: 1150015498}
   m_Layer: 9
   m_Name: Player2
   m_TagString: Bayi
@@ -86,57 +85,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9054566400632690523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9827ac7c6d141843b713d6c2ac7f05d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalMoveSpeed: 5
-  increasedMoveSpeed: 25
-  powerupDuration: 5
-  normalMoveSpeedDecreaseRate: 5
-  cameraMovementSpeed: 1
-  currentMoveSpeed: 0
-  isAlive: 1
---- !u!114 &9054566400632690470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5889bd6e9feade34dbca7213bdd7b08c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashDistance: 5
-  dashDuration: 0.5
---- !u!114 &7729104164724128932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b1bcd69f27a14848b7d820461a86df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
-  health: 100
-  score: 1000
-  delay: 0.5
-  imuneDelay: 1
-  animator: {fileID: 1031626483}
 --- !u!212 &6911496985364211786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -183,32 +131,12 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.872, y: 1.624}
+  m_Size: {x: 11.24, y: 2.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6911496985364211787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d213a1cc91470944e8a973639ad22bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreKeeper: {fileID: 0}
-  spriteRenderer: {fileID: 6911496985364211786}
-  animator: {fileID: 1031626483}
-  bayiSprite: {fileID: 21300000, guid: b8c03a46d7e241e4c97f6fd03f9d011b, type: 3}
-  remajaSprite: {fileID: 2747690628134850419, guid: f0cc92776a15d754eb23f79503aa773a, type: 3}
-  dewasaSprite: {fileID: -2135585597343286014, guid: 2a3678f19f416044c9b7aacd6d92e82a, type: 3}
-  dewasaMatangSprite: {fileID: 3625043607559282579, guid: 4b27934ff3cbfea4dba4f46f4b1bf135, type: 3}
-  megalodonSprite: {fileID: -5177388603050735206, guid: 362700da660d6894e9ac3e372b992bd8, type: 3}
 --- !u!95 &1031626483
 Animator:
   serializedVersion: 5
@@ -217,7 +145,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a601ef3288062894092baeef4ed12fdf, type: 2}
   m_CullingMode: 0
@@ -230,3 +158,62 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1150015487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87867e7d3f7343f44978f4ecd82ca790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMoveSpeed2: 5
+  increasedMoveSpeed2: 10
+  powerupDuration2: 5
+  normalMoveSpeedDecreaseRate2: 5
+  cameraMovementSpeed2: 1
+  currentMoveSpeed2: 0
+  isAlive2: 1
+  isPower2: 0
+--- !u!114 &1150015497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cc3b5beaadeb4489a60ffcf1fe3056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer2: 1
+  health2: 100
+  score2: 10000
+  delay2: 0.5
+  imuneDelay2: 1
+  animator2: {fileID: 0}
+--- !u!114 &1150015498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9472e021f6a744a9591fbe6b4b0d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreKeeper2: {fileID: 0}
+  spriteRenderer2: {fileID: 6911496985364211786}
+  animator2: {fileID: 0}
+  scoreSlider2: {fileID: 0}
+  bayiSprite2: {fileID: 21300000, guid: 8af70c61488630b4482c5e9d35ec32d6, type: 3}
+  remajaSprite2: {fileID: 0}
+  dewasaSprite2: {fileID: 0}
+  dewasaMatangSprite2: {fileID: 0}
+  megalodonSprite2: {fileID: 0}

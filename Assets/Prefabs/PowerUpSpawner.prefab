@@ -48,7 +48,7 @@ MonoBehaviour:
   - {fileID: 124169903471801248, guid: fdce667c2bfc9b640af82a392c5f5b9d, type: 3}
   - {fileID: 124169903471801248, guid: 5533179f8e559eb4691838778e171279, type: 3}
   - {fileID: 124169903471801248, guid: 1a7be65e278ba004fbe1c2d7b206edfc, type: 3}
-  spawnInterval: 1
+  spawnInterval: 20
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
   movementRange: 3

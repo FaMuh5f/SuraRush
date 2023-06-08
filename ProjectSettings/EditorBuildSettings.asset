@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ensiklopedia.unity
     guid: 032aa330607dd7647b0da56858c3acfc
+  - enabled: 1
+    path: Assets/Scenes/GameMulti.unity
+    guid: 5e43264615971d64bb13ebf449d5b8c4
+  - enabled: 1
+    path: Assets/Scenes/GameOverMulti.unity
+    guid: 59f810598f3f6ee4aaba933fbeca1fd3
+  - enabled: 1
+    path: Assets/Scenes/SingelMulti.unity
+    guid: 6a82ef4ed12fde94ea4f35bb4a1fcd3f
   m_configObjects: {}
