@@ -64,6 +64,7 @@ public class playerMovement : MonoBehaviour
         {
             // Move the player to the new position
             transform.position = newPosition;
+            
         }
     }
 
@@ -173,4 +174,9 @@ public class playerMovement : MonoBehaviour
     {
         return isInvincible;
     }
+
+    // public Vector3 getPlayerTransform()
+    // {
+    //     return playerTransform;
+    // }
 }
