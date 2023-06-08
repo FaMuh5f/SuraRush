@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1750296159775998267}
-  - component: {fileID: 1750296159775998266}
-  - component: {fileID: 1968517035}
+  - component: {fileID: 1398981197}
   m_Layer: 6
   m_Name: PowerUpSpawner
   m_TagString: Untagged
@@ -33,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1750296159775998266
+--- !u!114 &1398981197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,31 +41,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1750296159775998269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48ca03ed305a06499f8ef1ac7b327d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 03dba7001d99df948b4964626b59aee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
+  - {fileID: 124169903471801248, guid: fdce667c2bfc9b640af82a392c5f5b9d, type: 3}
   - {fileID: 124169903471801248, guid: 5533179f8e559eb4691838778e171279, type: 3}
-  spawnInterval: 30
-  moveSpeedHorizontal: 1
-  moveSpeedVertical: 1
-  movementRange: 3
-  maxEnemies: 10
---- !u!114 &1968517035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750296159775998269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f92523e07e8641479ee329c1fadf07e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 1750296159775998269}
-  spawnInterval: 30
+  - {fileID: 124169903471801248, guid: 1a7be65e278ba004fbe1c2d7b206edfc, type: 3}
+  spawnInterval: 1
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
   movementRange: 3
