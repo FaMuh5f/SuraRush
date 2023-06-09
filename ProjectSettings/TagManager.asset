@@ -14,13 +14,14 @@ TagManager:
   - DewasaMatang
   - Megalodon
   - SpeedPowerUp
-  - PowerPowerUp
   - InviciblePowerUp
   - Bayi2
   - Remaja2
   - Dewasa2
   - DewasaMatang2
   - Titanochampsa
+  - HealPowerUp
+  - PowerPowerUp
   layers:
   - Default
   - TransparentFX
