@@ -49,9 +49,14 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("Ensiklopedia");
     }
 
+    public void LoadHelp()
+    {
+        SceneManager.LoadScene("Help");
+    }
+
     public void LoadSetting()
     {
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene("Setting");
     }
 
     public void LoadGameOver()
@@ -68,11 +73,6 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
-    }
-
-    public void LoadSettingGame()
-    {
-        SceneManager.LoadScene("SettingsGame");
     }
 
     IEnumerator WaitAndLoad(string sceneName, float delay)
