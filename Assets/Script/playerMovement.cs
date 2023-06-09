@@ -190,4 +190,9 @@ public class playerMovement : MonoBehaviour
     // {
     //     return playerTransform;
     // }
+
+    public string getPlayerTag()
+    {
+        return gameObject.tag;
+    }
 }
