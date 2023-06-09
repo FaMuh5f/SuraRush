@@ -37,7 +37,7 @@ public class playerSprites : MonoBehaviour
         SetSpriteBasedOnScore();
 
         score = scoreKeeper.GetScore();
-        Debug.Log(score);
+        // Debug.Log(score);
     }
 
     private void SetSpriteBasedOnScore()

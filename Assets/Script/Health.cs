@@ -206,4 +206,9 @@ public class Health : MonoBehaviour
     {
         return isPlayer;
     }
+
+    public void heal(int value)
+    {
+        health += value;
+    }
 }
