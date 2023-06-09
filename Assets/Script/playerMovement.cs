@@ -23,6 +23,13 @@ public class playerMovement : MonoBehaviour
     private float cameraOffsetX;
     private string originalTag;
 
+    Health health;
+
+    private void Awake() 
+    {
+        health = FindObjectOfType<Health>();
+    }
+
     private void Start()
     {
         currentMoveSpeed = normalMoveSpeed;
@@ -85,21 +92,27 @@ public class playerMovement : MonoBehaviour
             }
         }
 
-        if (other.CompareTag("PowerPowerUp"))
+        if (other.CompareTag("HealPowerUp"))
         {
-            if (!isPower)
-            {
-                isPower = true;
-                powerupCoroutine = StartCoroutine(ActivatePowerPowerup());
-                Destroy(other.gameObject);
-            }
+            // if (!isPower)
+            // {
+            //     isPower = true;
+            //     powerupCoroutine = StartCoroutine(ActivateHealPowerup());
+            //     Destroy(other.gameObject);
+                
+
+            // }
+
+            health.heal(10);
+            Destroy(other.gameObject);
         }
 
-        if (other.CompareTag("InvinciblePowerUp"))
+        if (other.CompareTag("InviciblePowerUp"))
         {
             if (!isInvincible)
             {
                 isInvincible = true;
+                
                 powerupCoroutine = StartCoroutine(ActivateInvinciblePowerup());
                 Destroy(other.gameObject);
             }
@@ -128,19 +141,17 @@ public class playerMovement : MonoBehaviour
         isSpeedPowerupActive = false;
     }
 
-    private IEnumerator ActivatePowerPowerup()
+    private IEnumerator ActivateHealPowerup()
     {
-        originalTag = gameObject.tag;
-
-        gameObject.tag = "Megalodon";
+        
 
         yield return new WaitForSeconds(powerupDuration);
 
         StopCoroutine(powerupCoroutine);
-        StartCoroutine(DeactivatePowerPowerup());
+        StartCoroutine(DeactivateHealPowerup());
     }
 
-    private IEnumerator DeactivatePowerPowerup()
+    private IEnumerator DeactivateHealPowerup()
     {
         gameObject.tag = originalTag;
         isPower = false;

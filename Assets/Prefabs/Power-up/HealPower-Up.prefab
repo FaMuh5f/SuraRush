@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 124169903471801250}
   - component: {fileID: 124169903471801251}
   m_Layer: 7
-  m_Name: PowerPower-Up
-  m_TagString: PowerPowerUp
+  m_Name: HealPower-Up
+  m_TagString: HealPowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
