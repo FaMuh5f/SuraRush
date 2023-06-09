@@ -210,5 +210,9 @@ public class Health : MonoBehaviour
     public void heal(int value)
     {
         health += value;
+        if(health > 100)
+        {
+            health = 100;
+        }
     }
 }
