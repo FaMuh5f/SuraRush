@@ -25,6 +25,6 @@ public class GameOverUI : MonoBehaviour
     {
         // string skorText = string.Format("Skor kamu: {0}", score);
         // scoreText.text = skorText;
-        scoreText.text = scoreKeeper.GetScore().ToString();
+        scoreText.text = "Skor kamu adalah:\n" + scoreKeeper.GetScore();
     }
 }
