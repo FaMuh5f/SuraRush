@@ -134,7 +134,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   health: 100
-  score: 100
   delay: 0.5
   imuneDelay: 1
   animator: {fileID: 1031626483}
@@ -178,7 +177,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
