@@ -108,10 +108,10 @@ public class Health2 : MonoBehaviour
     void TakeDamage(int damage)
     {
         health2 -= damage;
-        if (health2 <= 0)
+        health2 = Mathf.Max(health2, 0);
+        if(health2 <= 0)
         {
             isPlayer2 = false;
-            Debug.Log(isPlayer2);
             Die();
         }
     }
