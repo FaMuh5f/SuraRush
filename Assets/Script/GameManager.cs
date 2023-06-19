@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         cameraSlide.ResetCamera();
         spawner.ResetSpawner();
         scoreKeeper.ResetScore();
-        scoreKeeper2.ResetScore2();
+        // scoreKeeper2.ResetScore2();
         // ResetCameraPosition();
         // cameraSlide.setGame(true);
     }

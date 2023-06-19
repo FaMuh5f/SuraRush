@@ -2447,6 +2447,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479382299}
   m_CullTransparentMesh: 1
+--- !u!4 &1509204963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3341245670407494757, guid: dbe709fb207a18d44846f51d440270d1, type: 3}
+  m_PrefabInstance: {fileID: 1618229164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510456742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,6 +2713,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1922410924570095598, guid: 3959be7070e7aeb45b4b3e7bbe7749d4, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1509204963}
     - target: {fileID: 1922410924570095599, guid: 3959be7070e7aeb45b4b3e7bbe7749d4, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -2956,7 +2965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1862587927
 RectTransform:
   m_ObjectHideFlags: 0
