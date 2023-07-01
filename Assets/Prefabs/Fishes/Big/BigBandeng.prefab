@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -3854526508397024524}
   - component: {fileID: 6791548521380244178}
   - component: {fileID: 1002044774}
+  - component: {fileID: -5927322285735590863}
   m_Layer: 6
   m_Name: BigBandeng
   m_TagString: BigFish
@@ -212,3 +213,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5927322285735590863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21fea7a4a5847749b5c6eeb2e2525e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeedVertical: 1
+  movementRange: 1
