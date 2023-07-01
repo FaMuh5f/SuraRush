@@ -36,7 +36,7 @@ public class ScoreKeeper2 : MonoBehaviour
     {
         score2 += value;
         Mathf.Clamp(score2, 0, int.MaxValue);
-        Debug.Log(score2);
+        // Debug.Log(score2);
     }
 
     public void ResetScore2()

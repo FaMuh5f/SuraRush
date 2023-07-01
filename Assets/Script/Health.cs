@@ -46,7 +46,8 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEating",true);
                     scoreKeeper.ModifyScore(200);
-                    audioPlayer.PlayEatingClip();  
+                    Debug.Log("nom");
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());
                      
