@@ -20,6 +20,11 @@ public class SfxManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
+        // Set volume from playerprefs
+        if (PlayerPrefs.HasKey("SFXVolume"))
+        {
+            soundEffect.volume = PlayerPrefs.GetFloat("SFXVolume");
+        }
         // Play the sound effect clip
         soundEffect.PlayOneShot(clip);
     }

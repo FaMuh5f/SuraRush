@@ -27,10 +27,13 @@ public class AudioManager : MonoBehaviour
         sfxManager = FindObjectOfType<SfxManager>();
     }
 
-    public void PlayBackgroundMusic(AudioClip clip)
+    private void Start()
     {
-        // Set the background music clip and play it
-        backgroundMusic.clip = clip;
+        // Set volume from playerprefs
+        if (PlayerPrefs.HasKey("BackgroundMusicVolume"))
+        {
+            backgroundMusic.volume = PlayerPrefs.GetFloat("BackgroundMusicVolume");
+        }
         backgroundMusic.Play();
     }
 
