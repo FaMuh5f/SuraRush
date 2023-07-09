@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7111077292526174785}
   - component: {fileID: 8022357276731357543}
   - component: {fileID: 735984916571681319}
+  - component: {fileID: 3583585709339917181}
   m_Layer: 6
   m_Name: MediumNila
   m_TagString: MediumFish
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2dbab2a489caa4438ca7fca45f7b6d2, type: 3}
   m_Name: 
@@ -153,14 +154,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2769b562d7b07db46a631d5a7a08edf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
   detectionRadius: 10
-  isBigFish: 0
 --- !u!114 &7111077292526174785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c55f0ac84d300f469a473f049f6f4c8, type: 3}
   m_Name: 
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 437ade4fc3f01d64292b0242fb2ee2a2, type: 3}
   m_Name: 
@@ -213,3 +213,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3583585709339917181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054528052136601689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21fea7a4a5847749b5c6eeb2e2525e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeedVertical: 1
+  movementRange: 1

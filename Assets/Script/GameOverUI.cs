@@ -26,5 +26,11 @@ public class GameOverUI : MonoBehaviour
         // string skorText = string.Format("Skor kamu: {0}", score);
         // scoreText.text = skorText;
         scoreText.text = "Skor kamu adalah:\n" + scoreKeeper.GetScore();
+
+        // save to playerprefs if score is higher than previous score
+        if (scoreKeeper.GetScore() > PlayerPrefs.GetInt("Score"))
+        {
+            PlayerPrefs.SetInt("Score", scoreKeeper.GetScore());
+        }
     }
 }

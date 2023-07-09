@@ -43,9 +43,4 @@ public class GamePlayTime : MonoBehaviour
         string timeText = string.Format("{0:00}:{1:00}", minutes, seconds);
         playtimeText.text = timeText;
     }
-
-    public float getTotalPlaytime()
-    {
-        return totalPlaytime;
-    }
 }

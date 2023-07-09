@@ -69,7 +69,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -194,8 +194,7 @@ MonoBehaviour:
   health2: 100
   score2: 10000
   delay2: 0.5
-  imuneDelay2: 1
-  animator2: {fileID: 0}
+  immuneDelay2: 1
 --- !u!114 &1150015498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreKeeper2: {fileID: 0}
   spriteRenderer2: {fileID: 6911496985364211786}
-  animator2: {fileID: 0}
   scoreSlider2: {fileID: 0}
   bayiSprite2: {fileID: 21300000, guid: 8af70c61488630b4482c5e9d35ec32d6, type: 3}
   remajaSprite2: {fileID: 0}
