@@ -5129,6 +5129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4424498569930685632, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
+      propertyPath: powerUpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b27eecd81c9420941a9bfebd7d4088ed, type: 3}
     - target: {fileID: 4424498569930685633, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
       propertyPath: m_RootOrder
       value: 15
