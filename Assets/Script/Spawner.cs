@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     public float moveSpeedVertical = 1f;  // Speed at which the spawner moves vertically
     public float movementRange = 2f;  // Maximum distance the spawner can move vertically
     public int maxEnemies = 10;  // Maximum number of enemies to be spawned
+    private float spawnIntervalFirst = 1f; // Time interval before spawn fish
 
     private int spawnedEnemies = 0;  // Counter for spawned enemies
     private bool isMovingUp = true;  // Flag to determine if the spawner is moving up or down
@@ -18,6 +19,18 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        // Create an array of possible movement ranges
+        float[] possibleRanges = { -1f, 1f };
+
+        // Select a random index from the array
+        int randomIndex = Random.Range(0, possibleRanges.Length);
+
+        // Assign the selected random movement range
+        moveSpeedVertical = Mathf.Abs(possibleRanges[randomIndex]);
+
+        // set spawn for the first time as random from 3s to 5s
+        spawnIntervalFirst = Random.Range(0f, 3f);
+
         // Store the initial position of the spawner
         initialPosition = transform.position;
         
@@ -28,6 +41,9 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
+        // Add a delay before starting the spawning
+        yield return new WaitForSeconds(spawnIntervalFirst);
+
         while (true)
         {
             // Select a random enemy prefab from the array
@@ -45,22 +61,34 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator MoveSpawner()
     {
+        // Get the reference to the camera
+        Camera mainCamera = Camera.main;
+
         while (true)
         {
-            // Move the spawner horizontally
+            // Move the Fish horizontally
             transform.Translate(Vector3.right * moveSpeedHorizontal * Time.deltaTime);
 
-            // Move the spawner vertically
-            if (isMovingUp)
-                transform.Translate(Vector3.up * moveSpeedVertical * Time.deltaTime);
-            else
-                transform.Translate(Vector3.down * moveSpeedVertical * Time.deltaTime);
+            // Get the bottom and top edges of the camera in world coordinates
+            float cameraBottom = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, mainCamera.nearClipPlane)).y;
+            float cameraTop = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, mainCamera.nearClipPlane)).y;
 
-            // Check if the spawner reached the maximum vertical distance
-            if (transform.position.y >= movementRange)
-                isMovingUp = false;
-            else if (transform.position.y <= -movementRange)
-                isMovingUp = true;
+            // Move the Fish vertically
+            float newYPosition = transform.position.y + (isMovingUp ? moveSpeedVertical : -moveSpeedVertical) * Time.deltaTime;
+
+            // Check if the new Y position exceeds the camera bounds
+            if (newYPosition < cameraBottom)
+            {
+                newYPosition = cameraBottom;  // Clamp the position to the bottom of the camera
+                isMovingUp = true;  // Start moving up
+            }
+            else if (newYPosition > cameraTop)
+            {
+                newYPosition = cameraTop;  // Clamp the position to the top of the camera
+                isMovingUp = false;  // Start moving down
+            }
+
+            transform.position = new Vector3(transform.position.x, newYPosition, transform.position.z);
 
             yield return null;
         }

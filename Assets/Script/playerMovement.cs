@@ -24,15 +24,16 @@ public class playerMovement : MonoBehaviour
     private string originalTag;
 
     Health health;
+    AudioPlayer audioPlayer;
 
     private void Awake() 
     {
         health = FindObjectOfType<Health>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     private void Start()
     {
-        currentMoveSpeed = normalMoveSpeed;
         // Calculate the camera boundaries
         Camera mainCamera = Camera.main;
         playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
@@ -47,6 +48,9 @@ public class playerMovement : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+
+        currentMoveSpeed = normalMoveSpeed;
+        increasedMoveSpeed = 2*normalMoveSpeed;
 
         // Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0f);
         // transform.position += movement * currentMoveSpeed * Time.deltaTime;
@@ -87,6 +91,7 @@ public class playerMovement : MonoBehaviour
             if (!isSpeedPowerupActive)
             {
                 isSpeedPowerupActive = true;
+                audioPlayer.PlayPowerUpClip();
                 powerupCoroutine = StartCoroutine(ActivateSpeedPowerup());
                 Destroy(other.gameObject);
             }
@@ -104,6 +109,7 @@ public class playerMovement : MonoBehaviour
             // }
 
             health.heal(10);
+            audioPlayer.PlayPowerUpClip();
             Destroy(other.gameObject);
         }
 
@@ -112,7 +118,7 @@ public class playerMovement : MonoBehaviour
             if (!isInvincible)
             {
                 isInvincible = true;
-                
+                audioPlayer.PlayPowerUpClip();
                 powerupCoroutine = StartCoroutine(ActivateInvinciblePowerup());
                 Destroy(other.gameObject);
             }
@@ -121,7 +127,7 @@ public class playerMovement : MonoBehaviour
 
     private IEnumerator ActivateSpeedPowerup()
     {
-        currentMoveSpeed = increasedMoveSpeed;
+        currentMoveSpeed = 2*normalMoveSpeed;
 
         yield return new WaitForSeconds(powerupDuration);
 
@@ -184,6 +190,10 @@ public class playerMovement : MonoBehaviour
     public static bool getInvicible()
     {
         return isInvincible;
+    }
+
+    public void setMovemmentSpeed(float speed){
+        normalMoveSpeed = speed;
     }
 
     // public Vector3 getPlayerTransform()

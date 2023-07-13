@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class playerSprites : MonoBehaviour
 {
 
+    [SerializeField] playerMovement playerMovement;
     [SerializeField] ScoreKeeper scoreKeeper;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Animator animator;
@@ -50,6 +51,7 @@ public class playerSprites : MonoBehaviour
             animator.SetBool("isDewasaMatang",false);
             animator.SetBool("isMegalodon",true);
             scoreSlider.maxValue = 999999;
+            playerMovement.setMovemmentSpeed(25);
             GetComponent<BoxCollider2D>().offset = new Vector2(3.8f, -0.5f);
         }
         else if (score >= 5000)
@@ -60,6 +62,7 @@ public class playerSprites : MonoBehaviour
             animator.SetBool("isDewasa",false);
             animator.SetBool("isDewasaMatang",true);
             scoreSlider.maxValue = 7000;
+            playerMovement.setMovemmentSpeed(20);
             GetComponent<BoxCollider2D>().offset = new Vector2(2.4f, -0.5f);
         }
         else if (score >= 3000)
@@ -70,6 +73,7 @@ public class playerSprites : MonoBehaviour
             animator.SetBool("isRemaja",false);
             animator.SetBool("isDewasa",true);
             scoreSlider.maxValue = 5000;
+            playerMovement.setMovemmentSpeed(15);
             GetComponent<BoxCollider2D>().offset = new Vector2(1.65f, 0f);
         }
         else if (score >= 1000)
@@ -80,6 +84,7 @@ public class playerSprites : MonoBehaviour
             // animator.SetBool("isBayi",false);
             animator.SetBool("isRemaja",true);
             scoreSlider.maxValue = 3000;
+            playerMovement.setMovemmentSpeed(10);
             GetComponent<BoxCollider2D>().offset = new Vector2(1.25f, 0f);
         }
         else
@@ -89,6 +94,7 @@ public class playerSprites : MonoBehaviour
             gameObject.tag = "Bayi";
             // animator.SetBool("isBayi",true);
             scoreSlider.maxValue = 1000;
+            playerMovement.setMovemmentSpeed(5);
             GetComponent<BoxCollider2D>().offset = new Vector2(1f, 0f);
         }
     }
