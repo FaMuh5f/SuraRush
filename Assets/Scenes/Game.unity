@@ -446,6 +446,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 452691925874716305, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640925726472569757, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640925726472569757, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6911496985364211787, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: scoreKeeper
       value: 
@@ -454,17 +466,21 @@ PrefabInstance:
       propertyPath: scoreSlider
       value: 
       objectReference: {fileID: 1195267595}
+    - target: {fileID: 6911496985364211787, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1922109517}
     - target: {fileID: 9054566400632690471, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9054566400632690471, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -5.99
       objectReference: {fileID: 0}
     - target: {fileID: 9054566400632690471, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 9054566400632690471, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2804,6 +2820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4424498569930685632, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
+      propertyPath: powerUpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b27eecd81c9420941a9bfebd7d4088ed, type: 3}
     - target: {fileID: 4424498569930685633, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3072,6 +3092,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862587926}
   m_CullTransparentMesh: 1
+--- !u!114 &1922109517 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9054566400632690523, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+  m_PrefabInstance: {fileID: 394505337}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9827ac7c6d141843b713d6c2ac7f05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1955259277
 GameObject:
   m_ObjectHideFlags: 0
