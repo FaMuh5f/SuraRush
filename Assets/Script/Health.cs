@@ -9,7 +9,6 @@ public class Health : MonoBehaviour
     // [SerializeField] int score = 50;
     [SerializeField] float delay = 0.5f;
     [SerializeField] float imuneDelay = 1f;
-
     [SerializeField] Animator animator;
 
     private bool isInvincible;
@@ -18,6 +17,7 @@ public class Health : MonoBehaviour
     ScoreKeeper scoreKeeper;
     LevelManager levelManager;
     playerMovement PlayerMovement;
+    ParticleSystem eatEffect;
 
     void Awake()
     {
@@ -25,6 +25,7 @@ public class Health : MonoBehaviour
         levelManager = FindObjectOfType<LevelManager>();
         PlayerMovement = FindObjectOfType<playerMovement>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
+        eatEffect = GetComponent<ParticleSystem>();
 
     }
 
@@ -47,10 +48,10 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEating",true);
                     scoreKeeper.ModifyScore(200);
                     Debug.Log("nom");
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());
-                     
                 }
 
                 if (other.tag == "MediumFish" && isPlayer)
@@ -75,6 +76,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(200);
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());    
@@ -85,6 +87,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(300);
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating()); 
@@ -103,6 +106,7 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(200);
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());    
@@ -112,6 +116,7 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(300);
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating()); 
@@ -121,6 +126,7 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(500);
+                    eatEffect.Play();
                     audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());
@@ -191,6 +197,7 @@ public class Health : MonoBehaviour
         animator.SetBool("isEatingDewasa",false);
         animator.SetBool("isEatingDewasaMatang",false);
         animator.SetBool("isEatingMegalodon",false);
+        eatEffect.Stop();
     }
 
     private IEnumerator ResetIsDamage()

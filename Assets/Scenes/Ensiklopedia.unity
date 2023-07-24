@@ -33001,10 +33001,10 @@ MonoBehaviour:
     score: 600
     uiBlur: {fileID: 194200453}
   - page: {fileID: 1985157329}
-    score: 700
+    score: 1100
     uiBlur: {fileID: 1027095015}
   - page: {fileID: 1650857695}
-    score: 1000
+    score: 1200
     uiBlur: {fileID: 750497626}
   previousButton: {fileID: 1495259545}
   nextButton: {fileID: 1777147985}
