@@ -52,9 +52,9 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEating",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
@@ -86,9 +86,9 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
@@ -102,9 +102,9 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(mediumFishScore);
-                    eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
@@ -126,9 +126,9 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
@@ -141,9 +141,9 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(mediumFishScore);
-                    eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
@@ -159,6 +159,7 @@ public class Health : MonoBehaviour
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
+                        eatEffect.Play();
                         Debug.Log("Yummy");
                     }else{
                         audioPlayer.PlayEatingClip();
