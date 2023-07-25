@@ -6,6 +6,7 @@ public class AudioPlayer : MonoBehaviour
 {
     [Header("Eating")]
     [SerializeField] List<AudioClip> eatingClips; // List of eating audio clips
+    [SerializeField] AudioClip yummyClips;
     [SerializeField] [Range(0f, 10f)] float eatingVolume = 10f;
 
     [Header("Dead")]
@@ -17,6 +18,7 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] [Range(0f, 10f)] float powerUpVolume = 10f;
 
     static AudioPlayer instance;
+    private int score;
 
     void Awake()
     {
@@ -55,6 +57,11 @@ public class AudioPlayer : MonoBehaviour
     public void PlayPowerUpClip()
     {
         PlayClip(powerUpClip, powerUpVolume);
+    }
+
+    public void PlayYummyClip()
+    {
+        PlayClip(yummyClips, eatingVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)
