@@ -12,7 +12,6 @@ public class Health : MonoBehaviour
     [SerializeField] Animator animator;
 
     private bool isInvincible;
-    private int yummy;
 
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
@@ -33,7 +32,6 @@ public class Health : MonoBehaviour
     void Update() 
     {
         isInvincible = playerMovement.getInvicible();
-        yummy = scoreKeeper.GetScore() % 500;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -49,16 +47,11 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEating",true);
                     scoreKeeper.ModifyScore(200);
+                    Debug.Log("nom");
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());
-                    
                 }
 
                 if (other.tag == "MediumFish" && isPlayer)
@@ -84,12 +77,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(200);
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());    
                 }
@@ -100,12 +88,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(300);
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating()); 
                 }
@@ -124,12 +107,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(200);
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());    
                 }
@@ -139,12 +117,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(300);
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating()); 
                 }
@@ -154,12 +127,7 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(500);
                     eatEffect.Play();
-                    if(yummy <= 100){
-                        audioPlayer.PlayYummyClip();
-                        Debug.Log("Yummy");
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
+                    audioPlayer.PlayEatingClip();
                     Destroy(other.gameObject);
                     StartCoroutine(ResetIsEating());
                 }
