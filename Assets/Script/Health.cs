@@ -10,6 +10,9 @@ public class Health : MonoBehaviour
     [SerializeField] float delay = 0.5f;
     [SerializeField] float imuneDelay = 1f;
     [SerializeField] Animator animator;
+    [SerializeField] int fishScore = 200;
+    [SerializeField] int mediumFishScore = 300;
+    [SerializeField] int bigFishScore = 500; 
 
     private bool isInvincible;
     private int yummy;
@@ -48,7 +51,7 @@ public class Health : MonoBehaviour
                 if (other.tag == "Fish")
                 {
                     animator.SetBool("isEating",true);
-                    scoreKeeper.ModifyScore(200);
+                    scoreKeeper.ModifyScore(fishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
@@ -82,7 +85,7 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
-                    scoreKeeper.ModifyScore(200);
+                    scoreKeeper.ModifyScore(fishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
@@ -98,7 +101,7 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
-                    scoreKeeper.ModifyScore(300);
+                    scoreKeeper.ModifyScore(mediumFishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
@@ -122,7 +125,7 @@ public class Health : MonoBehaviour
                 if (other.tag == "Fish")
                 {
                     animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(200);
+                    scoreKeeper.ModifyScore(fishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
@@ -137,7 +140,7 @@ public class Health : MonoBehaviour
                 if (other.tag == "MediumFish" && isPlayer)
                 {
                     animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(300);
+                    scoreKeeper.ModifyScore(mediumFishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
@@ -152,7 +155,7 @@ public class Health : MonoBehaviour
                 if (other.tag == "BigFish" && isPlayer)
                 {
                     animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(500);
+                    scoreKeeper.ModifyScore(bigFishScore);
                     eatEffect.Play();
                     if(yummy <= 100){
                         audioPlayer.PlayYummyClip();
