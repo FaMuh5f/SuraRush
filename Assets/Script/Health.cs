@@ -15,28 +15,32 @@ public class Health : MonoBehaviour
     [SerializeField] int bigFishScore = 500; 
 
     private bool isInvincible;
-    private int yummy;
+    private bool isYummy = false;
 
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
     LevelManager levelManager;
     playerMovement PlayerMovement;
-    ParticleSystem eatEffect;
 
+    [Header("Effect")]
+    InstantiatePrefabAsChild InstantiatePrefabAsChild;
+    // [SerializeField] public ParticleSystem eatEffect;
+    
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         levelManager = FindObjectOfType<LevelManager>();
         PlayerMovement = FindObjectOfType<playerMovement>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
-        eatEffect = GetComponent<ParticleSystem>();
-
+        // eatEffect = GetComponent<ParticleSystem>();
+        InstantiatePrefabAsChild = FindObjectOfType<InstantiatePrefabAsChild>();
     }
+
 
     void Update() 
     {
         isInvincible = playerMovement.getInvicible();
-        yummy = scoreKeeper.GetScore() % 500;
+        isYummy = scoreKeeper.GetScore() % 500 == 0;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -52,10 +56,10 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEating",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    if(yummy <= 100){
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -86,10 +90,10 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    if(yummy <= 100){
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -102,10 +106,10 @@ public class Health : MonoBehaviour
                     animator.SetBool("isEatingDewasa",true);
                     animator.SetBool("isEatingDewasaMatang",true);
                     scoreKeeper.ModifyScore(mediumFishScore);
-                    if(yummy <= 100){
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -126,10 +130,10 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(fishScore);
-                    if(yummy <= 100){
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -141,10 +145,10 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(mediumFishScore);
-                    if(yummy <= 100){
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -156,11 +160,11 @@ public class Health : MonoBehaviour
                 {
                     animator.SetBool("isEatingMegalodon",true);
                     scoreKeeper.ModifyScore(bigFishScore);
-                    eatEffect.Play();
-                    if(yummy <= 100){
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    if(isYummy){
                         audioPlayer.PlayYummyClip();
-                        eatEffect.Play();
-                        Debug.Log("Yummy");
+                        InstantiatePrefabAsChild.InstantiatePrefabEat();
+                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }
@@ -233,7 +237,9 @@ public class Health : MonoBehaviour
         animator.SetBool("isEatingDewasa",false);
         animator.SetBool("isEatingDewasaMatang",false);
         animator.SetBool("isEatingMegalodon",false);
-        eatEffect.Stop();
+        foreach (Transform child in transform) {
+            Destroy(child.gameObject,1);
+        }
     }
 
     private IEnumerator ResetIsDamage()

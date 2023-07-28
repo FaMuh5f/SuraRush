@@ -11,15 +11,24 @@ public class playerMovement : MonoBehaviour
     [SerializeField]  float cameraMovementSpeed = 1f;
 
     [SerializeField] private float currentMoveSpeed;
+
+    [Header("Effect")]
+    InstantiatePrefabAsChild InstantiatePrefabAsChild;
+    [SerializeField] public ParticleSystem ImmuneEffect;
+    [SerializeField] public ParticleSystem SpeedEffect;
+    [SerializeField] public ParticleSystem healingEffect;
+    
+
     private bool isSpeedPowerupActive = false;
     private Coroutine powerupCoroutine;
     
     public bool isAlive = true;
     public static bool isInvincible = false;
     public bool isPower = false;
+    public Vector3 newPosition;
 
     private float minX, maxX, minY, maxY;
-    private float playerWidth, playerHeight;
+    private float PlayerWidth, PlayerHeight;
     private float cameraOffsetX;
     private string originalTag;
 
@@ -30,18 +39,22 @@ public class playerMovement : MonoBehaviour
     {
         health = FindObjectOfType<Health>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
+        healingEffect = GetComponent<ParticleSystem>();
+        ImmuneEffect = GetComponent<ParticleSystem>();
+        SpeedEffect = GetComponent<ParticleSystem>();
+        InstantiatePrefabAsChild = FindObjectOfType<InstantiatePrefabAsChild>();
     }
 
     private void Start()
     {
         // Calculate the camera boundaries
         Camera mainCamera = Camera.main;
-        playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
-        playerHeight = GetComponent<SpriteRenderer>().bounds.extents.y;
-        minX = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + playerWidth;
-        maxX = mainCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - playerWidth;
-        minY = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + playerHeight;
-        maxY = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - playerHeight;
+        PlayerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        PlayerHeight = GetComponent<SpriteRenderer>().bounds.extents.y;
+        minX = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + PlayerWidth;
+        maxX = mainCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - PlayerWidth;
+        minY = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + PlayerHeight;
+        maxY = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - PlayerHeight;
     }
 
     private void Update()
@@ -56,7 +69,7 @@ public class playerMovement : MonoBehaviour
         // transform.position += movement * currentMoveSpeed * Time.deltaTime;
 
         // Calculate the new position
-        Vector3 newPosition = transform.position + new Vector3(moveHorizontal * GetMoveSpeed() * Time.deltaTime, 
+        newPosition = transform.position + new Vector3(moveHorizontal * GetMoveSpeed() * Time.deltaTime, 
         moveVertical * GetMoveSpeed() * Time.deltaTime, 0f);
 
         // Calculate the camera offset based on its movement
@@ -73,7 +86,7 @@ public class playerMovement : MonoBehaviour
 
         if (isAlive)
         {
-            // Move the player to the new position
+            // Move the Player to the new position
             transform.position = newPosition;
             
         }
@@ -94,6 +107,7 @@ public class playerMovement : MonoBehaviour
                 audioPlayer.PlayPowerUpClip();
                 powerupCoroutine = StartCoroutine(ActivateSpeedPowerup());
                 Destroy(other.gameObject);
+                InstantiatePrefabAsChild.InstantiatePrefabSpeed();
             }
         }
 
@@ -111,6 +125,10 @@ public class playerMovement : MonoBehaviour
             health.heal(10);
             audioPlayer.PlayPowerUpClip();
             Destroy(other.gameObject);
+            InstantiatePrefabAsChild.InstantiatePrefabHeal();
+            foreach (Transform child in transform) {
+                Destroy(child.gameObject,1);
+            }
         }
 
         if (other.CompareTag("InviciblePowerUp"))
@@ -121,6 +139,7 @@ public class playerMovement : MonoBehaviour
                 audioPlayer.PlayPowerUpClip();
                 powerupCoroutine = StartCoroutine(ActivateInvinciblePowerup());
                 Destroy(other.gameObject);
+                InstantiatePrefabAsChild.InstantiatePrefabImmune();
             }
         }
     }
@@ -128,6 +147,7 @@ public class playerMovement : MonoBehaviour
     private IEnumerator ActivateSpeedPowerup()
     {
         currentMoveSpeed = 2*normalMoveSpeed;
+        InstantiatePrefabAsChild.InstantiatePrefabSpeedEffect();
 
         yield return new WaitForSeconds(powerupDuration);
 
@@ -145,6 +165,9 @@ public class playerMovement : MonoBehaviour
 
         currentMoveSpeed = normalMoveSpeed;
         isSpeedPowerupActive = false;
+        foreach (Transform child in transform) {
+            Destroy(child.gameObject);
+        }
     }
 
     private IEnumerator ActivateHealPowerup()
@@ -168,6 +191,7 @@ public class playerMovement : MonoBehaviour
     private IEnumerator ActivateInvinciblePowerup()
     {
         isInvincible = true;
+        InstantiatePrefabAsChild.InstantiatePrefabImmuneEffect();
 
         yield return new WaitForSeconds(powerupDuration);
 
@@ -178,6 +202,9 @@ public class playerMovement : MonoBehaviour
     private IEnumerator DeactivateInvinciblePowerup()
     {
         isInvincible = false;
+        foreach (Transform child in transform) {
+                    Destroy(child.gameObject,1);
+        }
 
         yield break;
     }
@@ -196,8 +223,14 @@ public class playerMovement : MonoBehaviour
         normalMoveSpeed = speed;
     }
 
+    public Vector3 getPosisition(){
+        return newPosition;
+    }
+        
+    
+
     // public Vector3 getPlayerTransform()
     // {
-    //     return playerTransform;
+    //     return PlayerTransform;
     // }
 }
