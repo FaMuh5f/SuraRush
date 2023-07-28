@@ -5041,6 +5041,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4424498569930685632, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
+      propertyPath: yummyClips
+      value: 
+      objectReference: {fileID: 8300000, guid: 71dea4ea779af3f48bf50ec94fe5d783, type: 3}
     - target: {fileID: 4424498569930685633, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
       propertyPath: m_RootOrder
       value: 14
