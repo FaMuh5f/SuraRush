@@ -45,16 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 7054528052136601689, guid: ba61e1c34fd251c4b85d28796ebc0b2f, type: 3}
-  - {fileID: 7054528052136601689, guid: fa493ae6f054d1943857272cd0ce2d73, type: 3}
   - {fileID: 7054528052136601689, guid: 19bf5ce7697cb7646b7e3eb0a546c489, type: 3}
-  - {fileID: 7054528052136601689, guid: 37afa9d9cd4b8d840ac34219cadcc50a, type: 3}
-  - {fileID: 7054528052136601689, guid: c25e60c972696394da1371591352fcd1, type: 3}
   - {fileID: 7054528052136601689, guid: 790800aedbd70814e838abe95c5a4fd8, type: 3}
-  - {fileID: 7054528052136601689, guid: f9c9849d6c47bb24ea7452c22740e87a, type: 3}
-  - {fileID: 7054528052136601689, guid: d3d15bc728622d047aac69f45e250416, type: 3}
   spawnInterval: 5
   moveSpeedHorizontal: 1
   moveSpeedVertical: 1
-  movementRange: 5
+  movementRange: 3
   maxEnemies: 10
