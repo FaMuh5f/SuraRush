@@ -12,10 +12,6 @@ GameObject:
   - component: {fileID: 7054528052136601691}
   - component: {fileID: 7054528052136601690}
   - component: {fileID: -7885907446772869611}
-  - component: {fileID: 7458901141342376859}
-  - component: {fileID: -1630686762598701842}
-  - component: {fileID: -8224516887745535629}
-  - component: {fileID: 3604440579512873495}
   - component: {fileID: 1631388568}
   - component: {fileID: -549228549591392672}
   m_Layer: 6
@@ -131,67 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
---- !u!114 &7458901141342376859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2dbab2a489caa4438ca7fca45f7b6d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  detectionRadius: 10
-  isMediumFish: 0
-  isBigFish: 1
---- !u!114 &-1630686762598701842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2769b562d7b07db46a631d5a7a08edf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  detectionRadius: 10
---- !u!114 &-8224516887745535629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c55f0ac84d300f469a473f049f6f4c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  detectionRadius: 10
-  isMediumFish: 0
-  isBigFish: 1
---- !u!114 &3604440579512873495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7054528052136601689}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437ade4fc3f01d64292b0242fb2ee2a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  detectionRadius: 10
-  isBigFish: 0
 --- !u!95 &1631388568
 Animator:
   serializedVersion: 5
