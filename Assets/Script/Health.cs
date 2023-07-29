@@ -59,7 +59,6 @@ public class Health : MonoBehaviour
                     if(isYummy){
                         audioPlayer.PlayYummyClip();
                         InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
                     }else{
                         audioPlayer.PlayEatingClip();
                     }

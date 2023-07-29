@@ -324,7 +324,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611960765
 GameObject:
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d9f56391b1bf6499692e528a2a0dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 611960767}
   buttonClickClip: {fileID: 8300000, guid: fb51238778c230a4b8bd099db8404c77, type: 3}
   buttonHoverClip: {fileID: 8300000, guid: 6a2ac00b78f705549b71ae19df9dec3b, type: 3}
 --- !u!1001 &691595370
@@ -1225,6 +1225,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256984800}
   m_CullTransparentMesh: 1
+--- !u!1001 &1504978417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 988.75684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 287.47922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.8162793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609019, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527825973873609021, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cc54e44b7584784ea12485d3873b45b, type: 3}
 --- !u!1 &1575034702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1699,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d9f56391b1bf6499692e528a2a0dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 611960767}
+  button: {fileID: 2032455449}
   buttonClickClip: {fileID: 8300000, guid: fb51238778c230a4b8bd099db8404c77, type: 3}
   buttonHoverClip: {fileID: 8300000, guid: 6a2ac00b78f705549b71ae19df9dec3b, type: 3}
