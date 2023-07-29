@@ -6,7 +6,7 @@ public class enemyMovement : MonoBehaviour
 {
     public float moveSpeedHorizontal = 1f;  // Speed at which the Fish moves horizontally
     public float moveSpeedVertical = 1f;  // Speed at which the Fish moves vertically
-    public float movementRange = 2f;  // Maximum distance the Fish can move vertically
+    private float movementRange = 2f;  // Maximum distance the Fish can move vertically
 
     private bool isMovingUp = true;  // Flag to determine if the Fish is moving up or down
 
@@ -15,7 +15,7 @@ public class enemyMovement : MonoBehaviour
     private void Start()
     {
         // Create an array of possible movement ranges
-        float[] possibleRanges = { -5f, -4f, -3f, 3f, 4f, 5f };
+        float[] possibleRanges = {-3f, -2f, 2f, 3f};
 
         // Select a random index from the array
         int randomIndex = Random.Range(0, possibleRanges.Length);
@@ -44,8 +44,9 @@ public class enemyMovement : MonoBehaviour
             float cameraBottom = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, mainCamera.nearClipPlane)).y;
             float cameraTop = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, mainCamera.nearClipPlane)).y;
 
-            // Move the Fish vertically
-            float newYPosition = transform.position.y + (isMovingUp ? moveSpeedVertical : -moveSpeedVertical) * Time.deltaTime;
+            // Move the Fish vertically curved by a Sine wave and get y
+            float newYPosition = Mathf.Sin(Time.time) * moveSpeedVertical + initialPosition.y;            
+            // float newYPosition = transform.position.y + (isMovingUp ? moveSpeedVertical : -moveSpeedVertical) * Time.deltaTime;
 
             // Check if the new Y position exceeds the camera bounds
             if (newYPosition < cameraBottom)

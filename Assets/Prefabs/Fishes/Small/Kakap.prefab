@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 7054528052136601668}
   - component: {fileID: 7054528052136601691}
   - component: {fileID: 7054528052136601690}
-  - component: {fileID: -4598835664516231683}
-  - component: {fileID: 4222815415690203050}
-  - component: {fileID: 8465997007455132246}
+  - component: {fileID: -3935782502662405397}
+  - component: {fileID: 9178859481195158226}
+  - component: {fileID: 3568877542675142646}
   m_Layer: 6
-  m_Name: Tombro
+  m_Name: Kakap
   m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.51, y: 2.01}
+  m_Size: {x: 5.51, y: 2.81}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -105,8 +105,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8366667, y: 0.67}
-    newSize: {x: 5.51, y: 2.01}
+    oldSize: {x: 5.51, y: 2.81}
+    newSize: {x: 5.51, y: 2.81}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -114,7 +114,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &-4598835664516231683
+--- !u!50 &-3935782502662405397
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &4222815415690203050
+--- !u!95 &9178859481195158226
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 7054528052136601689}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 70c2e461440406b438ca137012aa98aa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4e4cfc8b19ffc1a44b80d86718f96158, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -156,7 +156,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8465997007455132246
+--- !u!114 &3568877542675142646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,4 +170,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedHorizontal: -1
   moveSpeedVertical: 1
-  movementRange: 5
