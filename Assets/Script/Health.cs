@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Health : MonoBehaviour
 {
@@ -34,8 +36,8 @@ public class Health : MonoBehaviour
         audioPlayer = FindObjectOfType<AudioPlayer>();
         // eatEffect = GetComponent<ParticleSystem>();
         InstantiatePrefabAsChild = FindObjectOfType<InstantiatePrefabAsChild>();
+        Scene scene = SceneManager.GetActiveScene();
     }
-
 
     void Update() 
     {
@@ -47,131 +49,135 @@ public class Health : MonoBehaviour
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
 
+        
+        if(gameObject.CompareTag("Bayi") || gameObject.CompareTag("Remaja"))
+        {
+            
+            if (other.tag == "Fish")
+            {
+                animator.SetBool("isEating",true);
+                scoreKeeper.ModifyScore(fishScore);
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating());
+                
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                animator.SetBool("isDamage",true);
+                animator.SetBool("isDamageRemaja",true);
+                audioPlayer.PlayHitClip();
+                TakeDamage(damageDealer.GetDamage());
+                StartCoroutine(ResetIsDamage());
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                animator.SetBool("isDamage",true);
+                animator.SetBool("isDamageRemaja",true);
+                audioPlayer.PlayHitClip();
+                TakeDamage(damageDealer.GetDamage());
+                StartCoroutine(ResetIsDamage());
+            }
+        }else if(gameObject.CompareTag("Dewasa") || gameObject.CompareTag("DewasaMatang"))
+        {
+            if (other.tag == "Fish")
+            {
+                animator.SetBool("isEatingDewasa",true);
+                animator.SetBool("isEatingDewasaMatang",true);
+                scoreKeeper.ModifyScore(fishScore);
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    Debug.Log(isYummy);
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating());    
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                animator.SetBool("isEatingDewasa",true);
+                animator.SetBool("isEatingDewasaMatang",true);
+                scoreKeeper.ModifyScore(mediumFishScore);
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    Debug.Log(isYummy);
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating()); 
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                animator.SetBool("isDamageDewasa",true);
+                animator.SetBool("isDamageDewasaMatang",true);
+                audioPlayer.PlayHitClip();
+                TakeDamage(damageDealer.GetDamage());
+                StartCoroutine(ResetIsDamage());
+            }
+        }else if(gameObject.CompareTag("Megalodon"))
+        {
+            if (other.tag == "Fish")
+            {
+                animator.SetBool("isEatingMegalodon",true);
+                scoreKeeper.ModifyScore(fishScore);
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    Debug.Log(isYummy);
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating());    
+            }
+
+            if (other.tag == "MediumFish" && isPlayer)
+            {
+                animator.SetBool("isEatingMegalodon",true);
+                scoreKeeper.ModifyScore(mediumFishScore);
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    Debug.Log(isYummy);
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating()); 
+            }
+
+            if (other.tag == "BigFish" && isPlayer)
+            {
+                animator.SetBool("isEatingMegalodon",true);
+                scoreKeeper.ModifyScore(bigFishScore);
+                InstantiatePrefabAsChild.InstantiatePrefabEat();
+                if(isYummy){
+                    audioPlayer.PlayYummyClip();
+                    InstantiatePrefabAsChild.InstantiatePrefabEat();
+                    Debug.Log(isYummy);
+                }else{
+                    audioPlayer.PlayEatingClip();
+                }
+                Destroy(other.gameObject);
+                StartCoroutine(ResetIsEating());
+            }
+        }
+        
         if(!isInvincible)
         {
-            if(gameObject.CompareTag("Bayi") || gameObject.CompareTag("Remaja"))
-            {
-                
-                if (other.tag == "Fish")
-                {
-                    animator.SetBool("isEating",true);
-                    scoreKeeper.ModifyScore(fishScore);
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating());
-                    
-                }
-
-                if (other.tag == "MediumFish" && isPlayer)
-                {
-                    animator.SetBool("isDamage",true);
-                    animator.SetBool("isDamageRemaja",true);
-                    TakeDamage(damageDealer.GetDamage());
-                    StartCoroutine(ResetIsDamage());
-                }
-
-                if (other.tag == "BigFish" && isPlayer)
-                {
-                    animator.SetBool("isDamage",true);
-                    animator.SetBool("isDamageRemaja",true);
-                    TakeDamage(damageDealer.GetDamage());
-                    StartCoroutine(ResetIsDamage());
-                }
-            }else if(gameObject.CompareTag("Dewasa") || gameObject.CompareTag("DewasaMatang"))
-            {
-                if (other.tag == "Fish")
-                {
-                    animator.SetBool("isEatingDewasa",true);
-                    animator.SetBool("isEatingDewasaMatang",true);
-                    scoreKeeper.ModifyScore(fishScore);
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating());    
-                }
-
-                if (other.tag == "MediumFish" && isPlayer)
-                {
-                    animator.SetBool("isEatingDewasa",true);
-                    animator.SetBool("isEatingDewasaMatang",true);
-                    scoreKeeper.ModifyScore(mediumFishScore);
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating()); 
-                }
-
-                if (other.tag == "BigFish" && isPlayer)
-                {
-                    animator.SetBool("isDamageDewasa",true);
-                    animator.SetBool("isDamageDewasaMatang",true);
-                    TakeDamage(damageDealer.GetDamage());
-                    StartCoroutine(ResetIsDamage());
-                }
-            }else if(gameObject.CompareTag("Megalodon"))
-            {
-                if (other.tag == "Fish")
-                {
-                    animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(fishScore);
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating());    
-                }
-
-                if (other.tag == "MediumFish" && isPlayer)
-                {
-                    animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(mediumFishScore);
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating()); 
-                }
-
-                if (other.tag == "BigFish" && isPlayer)
-                {
-                    animator.SetBool("isEatingMegalodon",true);
-                    scoreKeeper.ModifyScore(bigFishScore);
-                    InstantiatePrefabAsChild.InstantiatePrefabEat();
-                    if(isYummy){
-                        audioPlayer.PlayYummyClip();
-                        InstantiatePrefabAsChild.InstantiatePrefabEat();
-                        Debug.Log(isYummy);
-                    }else{
-                        audioPlayer.PlayEatingClip();
-                    }
-                    Destroy(other.gameObject);
-                    StartCoroutine(ResetIsEating());
-                }
-            }
-        
             if (other.tag == "Trash")
             {
                 // Destroy(other.gameObject);
@@ -181,6 +187,7 @@ public class Health : MonoBehaviour
                 animator.SetBool("isDamageDewasaMatang",true);
                 animator.SetBool("isDamageMegalodon",true);
                 TakeDamage(damageDealer.GetDamage());
+                audioPlayer.PlayHitClip();
                 damageDealer.Hit();
                 StartCoroutine(ResetIsDamage());
             }
@@ -213,8 +220,13 @@ public class Health : MonoBehaviour
 
     void Die()
     {
+        Scene scene = SceneManager.GetActiveScene();
         audioPlayer.PlayDeathClip();
-        levelManager.LoadGameOver();
+        if(scene.name == "GameMulti"){
+            levelManager.LoadGameOverMulti();
+        }else{
+            levelManager.LoadGameOver();
+        }
         animator.SetBool("isDamage",false);
         animator.SetBool("isDamageRemaja",false);
         animator.SetBool("isDamageDewasa",false);
@@ -263,5 +275,9 @@ public class Health : MonoBehaviour
         {
             health = 100;
         }
+    }
+
+    public void resetPlayer(){
+        isPlayer = false;
     }
 }

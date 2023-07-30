@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 124169903471801250}
   - component: {fileID: 124169903471801251}
   m_Layer: 7
-  m_Name: Power-Up
+  m_Name: SpeedPower-Up
   m_TagString: SpeedPowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,7 +6,7 @@ public class enemyMovement : MonoBehaviour
 {
     public float moveSpeedHorizontal = 1f;  // Speed at which the Fish moves horizontally
     public float moveSpeedVertical = 1f;  // Speed at which the Fish moves vertically
-    private float movementRange = 2f;  // Maximum distance the Fish can move vertically
+    // public float movementRange = 2f;  // Maximum distance the Fish can move vertically
 
     private bool isMovingUp = true;  // Flag to determine if the Fish is moving up or down
 
@@ -15,13 +15,13 @@ public class enemyMovement : MonoBehaviour
     private void Start()
     {
         // Create an array of possible movement ranges
-        float[] possibleRanges = {-3f, -2f, 2f, 3f};
+        // float[] possibleSpeedHorizontal = {-1f, 1f};
 
         // Select a random index from the array
-        int randomIndex = Random.Range(0, possibleRanges.Length);
+        // int randomIndex = Random.Range(0, possibleRanges.Length);
 
         // Assign the selected random movement range
-        movementRange = Mathf.Abs(possibleRanges[randomIndex]);
+        // movementRange = Mathf.Abs(possibleRanges[randomIndex]);
 
         // Store the initial position of the Fish
         initialPosition = transform.position;
@@ -30,10 +30,15 @@ public class enemyMovement : MonoBehaviour
         StartCoroutine(moveFish());
     }
 
+    private void update(){
+        
+    }
+
     private IEnumerator moveFish()
     {
         // Get the reference to the camera
         Camera mainCamera = Camera.main;
+        
 
         while (true)
         {
@@ -45,8 +50,8 @@ public class enemyMovement : MonoBehaviour
             float cameraTop = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, mainCamera.nearClipPlane)).y;
 
             // Move the Fish vertically curved by a Sine wave and get y
-            float newYPosition = Mathf.Sin(Time.time) * moveSpeedVertical + initialPosition.y;            
-            // float newYPosition = transform.position.y + (isMovingUp ? moveSpeedVertical : -moveSpeedVertical) * Time.deltaTime;
+            // float newYPosition = Mathf.Sin(Time.time) * moveSpeedVertical + initialPosition.y;            
+            float newYPosition = transform.position.y + (isMovingUp ? moveSpeedVertical : -moveSpeedVertical) * Time.deltaTime;
 
             // Check if the new Y position exceeds the camera bounds
             if (newYPosition < cameraBottom)

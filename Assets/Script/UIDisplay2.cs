@@ -16,9 +16,16 @@ public class UIDisplay2 : MonoBehaviour
     [SerializeField] ScoreKeeper2 scoreKeeper2;
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [Header("Speed")]
+    [SerializeField] Slider speedSlider;
+    [SerializeField] playerMovement2 playerMovement2;
+    [SerializeField] TextMeshProUGUI speedText;
+
     void Awake()
     {
         scoreKeeper2 = FindObjectOfType<ScoreKeeper2>();
+        playerMovement2 = FindObjectOfType<playerMovement2>();
+
     }
 
     void Start()
@@ -28,10 +35,12 @@ public class UIDisplay2 : MonoBehaviour
 
     void Update()
     {
-        scoreSlider.value = scoreKeeper2.GetScore2();
+        scoreSlider.value = scoreKeeper2.GetScore();
         healthSlider.value = playerHealth2.GetHealth2();
+        speedSlider.value = playerMovement2.getCurrentMoveSpeed();
 
-        scoreText.text = scoreKeeper2.GetScore2().ToString();
+        scoreText.text = scoreKeeper2.GetScore().ToString();
         healthText.text = playerHealth2.GetHealth2().ToString();
+        speedText.text = playerMovement2.getCurrentMoveSpeed().ToString();
     }
 }

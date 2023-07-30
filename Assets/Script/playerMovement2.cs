@@ -11,6 +11,13 @@ public class playerMovement2 : MonoBehaviour
     [SerializeField]  float cameraMovementSpeed2 = 1f;
 
     [SerializeField] private float currentMoveSpeed2;
+
+    [Header("Effect")]
+    InstantiatePrefabAsChild2 InstantiatePrefabAsChild2;
+    [SerializeField] public ParticleSystem ImmuneEffect;
+    [SerializeField] public ParticleSystem SpeedEffect;
+    [SerializeField] public ParticleSystem healingEffect;
+
     private bool isSpeedPowerupActive2 = false;
     private Coroutine powerupCoroutine2;
     
@@ -22,6 +29,20 @@ public class playerMovement2 : MonoBehaviour
     private float playerWidth2, playerHeight2;
     private float cameraOffsetX2;
     private string originalTag2;
+    private Vector3 newPosition2;
+
+    Health2 health2;
+    AudioPlayer2 audioPlayer2;
+
+    private void Awake()
+    {
+        health2 = FindObjectOfType<Health2>();
+        audioPlayer2 = FindObjectOfType<AudioPlayer2>();
+        healingEffect = GetComponent<ParticleSystem>();
+        ImmuneEffect = GetComponent<ParticleSystem>();
+        SpeedEffect = GetComponent<ParticleSystem>();
+        InstantiatePrefabAsChild2 = FindObjectOfType<InstantiatePrefabAsChild2>();
+    }
 
     private void Start()
     {
@@ -60,7 +81,7 @@ public class playerMovement2 : MonoBehaviour
         }
 
         // Calculate the new position
-        Vector3 newPosition2 = transform.position + new Vector3(moveHorizontal2 * GetMoveSpeed() * Time.deltaTime, 
+        newPosition2 = transform.position + new Vector3(moveHorizontal2 * GetMoveSpeed() * Time.deltaTime, 
         moveVertical2 * GetMoveSpeed() * Time.deltaTime, 0f);
 
         // Calculate the camera offset based on its movement
@@ -94,28 +115,36 @@ public class playerMovement2 : MonoBehaviour
             if (!isSpeedPowerupActive2)
             {
                 isSpeedPowerupActive2 = true;
+                audioPlayer2.PlayPowerUpClip();
                 powerupCoroutine2 = StartCoroutine(ActivateSpeedPowerup());
                 Destroy(other.gameObject);
+                InstantiatePrefabAsChild2.InstantiatePrefabSpeed();
             }
         }
 
-        if (other.CompareTag("PowerPowerUp"))
+        if (other.CompareTag("HealPowerUp"))
         {
             if (!isPower2)
             {
-                isPower2 = true;
-                powerupCoroutine2 = StartCoroutine(ActivatePowerPowerup());
+                health2.heal(10);
+                audioPlayer2.PlayPowerUpClip();
                 Destroy(other.gameObject);
+                InstantiatePrefabAsChild2.InstantiatePrefabHeal();
+                foreach (Transform child in transform) {
+                    Destroy(child.gameObject,1);
+                }
             }
         }
 
-        if (other.CompareTag("InvinciblePowerUp"))
+        if (other.CompareTag("InviciblePowerUp"))
         {
             if (!isInvincible2)
             {
                 isInvincible2 = true;
+                audioPlayer2.PlayPowerUpClip();
                 powerupCoroutine2 = StartCoroutine(ActivateInvinciblePowerup());
                 Destroy(other.gameObject);
+                InstantiatePrefabAsChild2.InstantiatePrefabImmune();
             }
         }
     }
@@ -123,6 +152,7 @@ public class playerMovement2 : MonoBehaviour
     private IEnumerator ActivateSpeedPowerup()
     {
         currentMoveSpeed2 = increasedMoveSpeed2;
+        InstantiatePrefabAsChild2.InstantiatePrefabSpeedEffect();
 
         yield return new WaitForSeconds(powerupDuration2);
 
@@ -140,21 +170,21 @@ public class playerMovement2 : MonoBehaviour
 
         currentMoveSpeed2 = normalMoveSpeed2;
         isSpeedPowerupActive2 = false;
+        foreach (Transform child in transform) {
+            Destroy(child.gameObject);
+        }
     }
 
-    private IEnumerator ActivatePowerPowerup()
+    private IEnumerator ActivateHealPowerUp()
     {
-        originalTag2 = gameObject.tag;
-
-        gameObject.tag = "Megalodon";
 
         yield return new WaitForSeconds(powerupDuration2);
 
         StopCoroutine(powerupCoroutine2);
-        StartCoroutine(DeactivatePowerPowerup());
+        StartCoroutine(DeactivateHealPowerUp());
     }
 
-    private IEnumerator DeactivatePowerPowerup()
+    private IEnumerator DeactivateHealPowerUp()
     {
         gameObject.tag = originalTag2;
         isPower2 = false;
@@ -165,6 +195,7 @@ public class playerMovement2 : MonoBehaviour
     private IEnumerator ActivateInvinciblePowerup()
     {
         isInvincible2 = true;
+        InstantiatePrefabAsChild2.InstantiatePrefabImmuneEffect();
 
         yield return new WaitForSeconds(powerupDuration2);
 
@@ -175,6 +206,9 @@ public class playerMovement2 : MonoBehaviour
     private IEnumerator DeactivateInvinciblePowerup()
     {
         isInvincible2 = false;
+        foreach (Transform child in transform) {
+                    Destroy(child.gameObject,1);
+        }
 
         yield break;
     }
@@ -187,5 +221,17 @@ public class playerMovement2 : MonoBehaviour
     public static bool getInvicible()
     {
         return isInvincible2;
+    }
+
+    public void setMovemmentSpeed(float speed){
+        normalMoveSpeed2 = speed;
+    }
+
+    public Vector3 getPosisition(){
+        return newPosition2;
+    }
+
+    public float getCurrentMoveSpeed(){
+        return currentMoveSpeed2;
     }
 }

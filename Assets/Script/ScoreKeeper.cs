@@ -7,6 +7,9 @@ public class ScoreKeeper : MonoBehaviour
     int score;
 
     static ScoreKeeper instance;
+    public bool whoWin;
+    private Health health;
+    private Health2 health2;
     
     void Awake()
     {
