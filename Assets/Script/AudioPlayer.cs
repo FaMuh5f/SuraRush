@@ -17,6 +17,10 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip powerUpClip;
     [SerializeField] [Range(0f, 10f)] float powerUpVolume = 10f;
 
+    [Header("hit")]
+    [SerializeField] AudioClip hitClip;
+    [SerializeField] [Range(0f, 10f)] float hitVolume = 10f;
+
     static AudioPlayer instance;
     private int score;
 
@@ -62,6 +66,11 @@ public class AudioPlayer : MonoBehaviour
     public void PlayYummyClip()
     {
         PlayClip(yummyClips, eatingVolume);
+    }
+
+    public void PlayHitClip()
+    {
+        PlayClip(hitClip, hitVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)

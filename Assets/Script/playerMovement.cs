@@ -226,6 +226,10 @@ public class playerMovement : MonoBehaviour
     public Vector3 getPosisition(){
         return newPosition;
     }
+
+    public float getCurrentMoveSpeed(){
+        return currentMoveSpeed;
+    }
         
     
 

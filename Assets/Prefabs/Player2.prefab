@@ -14,11 +14,12 @@ GameObject:
   - component: {fileID: 6911496985364211786}
   - component: {fileID: 1031626483}
   - component: {fileID: 1150015487}
-  - component: {fileID: 1150015497}
   - component: {fileID: 1150015498}
+  - component: {fileID: 1150015505}
+  - component: {fileID: 2103056590}
   m_Layer: 9
   m_Name: Player2
-  m_TagString: Bayi
+  m_TagString: Bayi2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,8 +77,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.024, y: 1.024}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 11.24, y: 2.32}
+    newSize: {x: 11.24, y: 2.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -145,9 +146,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a601ef3288062894092baeef4ed12fdf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07647e5394ecea941b90e5700e37ffe0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -176,25 +177,11 @@ MonoBehaviour:
   normalMoveSpeedDecreaseRate2: 5
   cameraMovementSpeed2: 1
   currentMoveSpeed2: 0
+  ImmuneEffect: {fileID: 0}
+  SpeedEffect: {fileID: 0}
+  healingEffect: {fileID: 0}
   isAlive2: 1
   isPower2: 0
---- !u!114 &1150015497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9054566400632690521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85cc3b5beaadeb4489a60ffcf1fe3056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer2: 1
-  health2: 100
-  score2: 10000
-  delay2: 0.5
-  immuneDelay2: 1
 --- !u!114 &1150015498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,9 +196,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreKeeper2: {fileID: 0}
   spriteRenderer2: {fileID: 6911496985364211786}
+  animator2: {fileID: 1031626483}
   scoreSlider2: {fileID: 0}
-  bayiSprite2: {fileID: 21300000, guid: 8af70c61488630b4482c5e9d35ec32d6, type: 3}
-  remajaSprite2: {fileID: 0}
-  dewasaSprite2: {fileID: 0}
-  dewasaMatangSprite2: {fileID: 0}
-  megalodonSprite2: {fileID: 0}
+  bayiSprite: {fileID: 0}
+  remajaSprite: {fileID: 0}
+  dewasaSprite: {fileID: 0}
+  dewasaMatangSprite: {fileID: 0}
+  titanochampsaSprite: {fileID: 0}
+--- !u!114 &1150015505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cc3b5beaadeb4489a60ffcf1fe3056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer2: 1
+  health2: 100
+  delay2: 0.5
+  immuneDelay2: 1
+  fishScore: 200
+  mediumFishScore: 300
+  bigFishScore: 500
+--- !u!114 &2103056590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054566400632690521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a30407188385a5409b278a2e3d1c5a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatParticle: {fileID: 1277860257930188985, guid: 4c03a0956ab95014cb0a89d08d3e4fbe, type: 3}
+  speedParticler: {fileID: 5682979381619025898, guid: 404927fbada28924f84780dc33695499, type: 3}
+  immuneParticle: {fileID: 2658636547111978019, guid: 2ddab6fd6ae989f48bb27fd5dd62bfba, type: 3}
+  healParticle: {fileID: 8442127266357775644, guid: 58f41b1ac9029a64d8a57d5cf29c9aca, type: 3}
+  speedEffect: {fileID: 7114767479039462676, guid: 52020efd9f5b689429f8c72d513d030b, type: 3}
+  immuneEffect: {fileID: 6449502476123918344, guid: 1b4b58a67f4634746bd67b3829571768, type: 3}
+  eatParticleRender: {fileID: 1277860257930188987, guid: 4c03a0956ab95014cb0a89d08d3e4fbe, type: 3}
+  speedParticlerRender: {fileID: 5682979381619025900, guid: 404927fbada28924f84780dc33695499, type: 3}
+  immuneParticleRender: {fileID: 2658636547111978017, guid: 2ddab6fd6ae989f48bb27fd5dd62bfba, type: 3}
+  healParticleRender: {fileID: 8442127266357775634, guid: 58f41b1ac9029a64d8a57d5cf29c9aca, type: 3}

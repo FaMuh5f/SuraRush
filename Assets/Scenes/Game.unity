@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 541550136}
   - component: {fileID: 541550135}
   m_Layer: 5
-  m_Name: PowerCooldown
+  m_Name: SpeedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 848383513}
   - component: {fileID: 848383514}
   m_Layer: 5
-  m_Name: PowerSlider
+  m_Name: SpeedSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4138,42 +4138,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1329753230, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: m_Pivot.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753230, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: m_RenderAlignment
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753230, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7304664f9255fe34ba287b9958daa744, type: 2}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: lengthInSec
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: emitterVelocityMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: EmissionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1329753231, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6911496985364211787, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
       propertyPath: scoreKeeper
       value: 
@@ -4241,6 +4205,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1bcd69f27a14848b7d820461a86df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1329753229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9054566400632690523, guid: bf1698a106c32ab4d993e782a23cd4ed, type: 3}
+  m_PrefabInstance: {fileID: 1329753227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9827ac7c6d141843b713d6c2ac7f05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1362860890
@@ -5093,10 +5068,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4424498569930685632, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
-      propertyPath: yummyClips
-      value: 
-      objectReference: {fileID: 8300000, guid: 71dea4ea779af3f48bf50ec94fe5d783, type: 3}
     - target: {fileID: 4424498569930685633, guid: 9c7178b83ce9caf469e81ad4afd75466, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5930,6 +5901,9 @@ MonoBehaviour:
   scoreSlider: {fileID: 1195267595}
   scoreKeeper: {fileID: 8309401611679550802}
   scoreText: {fileID: 1328171680}
+  speedSlider: {fileID: 848383514}
+  playerMovement: {fileID: 1329753229}
+  speedText: {fileID: 541550135}
 --- !u!114 &2044618144
 MonoBehaviour:
   m_ObjectHideFlags: 0

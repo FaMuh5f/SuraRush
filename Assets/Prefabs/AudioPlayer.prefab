@@ -50,12 +50,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1ec1eb02e2dc6454180384cc8b70fc48, type: 3}
   - {fileID: 8300000, guid: a6d376c01e47417459e59ed9825c826d, type: 3}
   - {fileID: 8300000, guid: 08d6f4fc1325ee8498f26deedc1c6d1e, type: 3}
-  yummyClips: {fileID: 8300000, guid: 6e6305d0f6df4c64291ded67eeb22a57, type: 3}
+  yummyClips: {fileID: 8300000, guid: 71dea4ea779af3f48bf50ec94fe5d783, type: 3}
   eatingVolume: 10
   deathClip: {fileID: 8300000, guid: d2d4c466672ce5e4ea1a7aba23e3b32c, type: 3}
   deathVolume: 10
   powerUpClip: {fileID: 8300000, guid: b27eecd81c9420941a9bfebd7d4088ed, type: 3}
   powerUpVolume: 10
+  hitClip: {fileID: 8300000, guid: 2a89eddb761e56447b7e5b277169c12d, type: 3}
+  hitVolume: 10
 --- !u!82 &4424498569930685635
 AudioSource:
   m_ObjectHideFlags: 0

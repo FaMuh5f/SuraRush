@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     ScoreKeeper2 scoreKeeper2;
     CameraSlide cameraSlide;
     Spawner spawner;
+    winTracker  winTracker;
+    Health health;
+    Health2 health2;
 
     public Transform cameraTransform;
 
@@ -17,6 +20,9 @@ public class GameManager : MonoBehaviour
         scoreKeeper2 = FindObjectOfType<ScoreKeeper2>();
         cameraSlide = FindObjectOfType<CameraSlide>();
         spawner = FindObjectOfType<Spawner>();
+        winTracker = FindObjectOfType<winTracker>();
+        health = FindObjectOfType<Health>();
+        health2 = FindObjectOfType<Health2>();
     }
 
     void Start()
@@ -27,7 +33,10 @@ public class GameManager : MonoBehaviour
         cameraSlide.ResetCamera();
         spawner.ResetSpawner();
         scoreKeeper.ResetScore();
-        // scoreKeeper2.ResetScore2();
+        scoreKeeper2.ResetScore();
+        winTracker.resetWin();
+        // health.resetPlayer();
+        // health2.resetPlayer();
         // ResetCameraPosition();
         // cameraSlide.setGame(true);
     }

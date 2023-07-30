@@ -7,9 +7,11 @@ using TMPro;
 public class GameOverUIMulti : MonoBehaviour
 {
     [SerializeField] ScoreKeeper scoreKeeper;
+    [SerializeField] ScoreKeeper2 scoreKeeper2;
+    [SerializeField] winTracker winTracker;
     [SerializeField] TextMeshProUGUI whoWin;
     [SerializeField] TextMeshProUGUI scoreText;
-    Health healthPlayer1;
+    Health healthPlayer;
     Health2 healthPlayer2;
 
 
@@ -18,8 +20,10 @@ public class GameOverUIMulti : MonoBehaviour
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        healthPlayer1 = FindObjectOfType<Health>();
+        scoreKeeper2 = FindObjectOfType<ScoreKeeper2>();
+        healthPlayer = FindObjectOfType<Health>();
         healthPlayer2 = FindObjectOfType<Health2>();
+        winTracker = FindObjectOfType<winTracker>();
     }
 
     void Start()
@@ -31,14 +35,18 @@ public class GameOverUIMulti : MonoBehaviour
     {
         // string skorText = string.Format("Skor kamu: {0}", score);
         // scoreText.text = skorText;
-        scoreText.text = scoreKeeper.GetScore().ToString();
-        if(healthPlayer1.GetPlayer() == true)
+
+        Debug.Log(winTracker.getWhoWin());
+        
+        if(winTracker.getWhoWin() == true)
         {
             whoWin.text = "Player 1 menang";
+            scoreText.text = scoreKeeper.GetScore().ToString();
         }
-        else if(healthPlayer2.GetPlayer() == true)
+        else if(winTracker.getWhoWin() == false)
         {
-            whoWin.text = "Player 2 menag";
+            whoWin.text = "Player 2 menang";
+            scoreText.text = scoreKeeper2.GetScore().ToString();
         }
     }
 }
