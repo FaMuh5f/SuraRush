@@ -122,7 +122,7 @@ public class playerMovement : MonoBehaviour
 
             // }
 
-            health.heal(10);
+            health.heal(25);
             audioPlayer.PlayPowerUpClip();
             Destroy(other.gameObject);
             InstantiatePrefabAsChild.InstantiatePrefabHeal();

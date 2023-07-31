@@ -6005,7 +6005,6 @@ GameObject:
   - component: {fileID: 2060424176}
   - component: {fileID: 2060424178}
   - component: {fileID: 2060424177}
-  - component: {fileID: 2060424179}
   m_Layer: 10
   m_Name: bg_sea
   m_TagString: Untagged
@@ -6095,19 +6094,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2060424179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060424175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af65ccec5c3975f47b81dcc9ae90a2d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blueChange: 50
 --- !u!1 &2131843467
 GameObject:
   m_ObjectHideFlags: 0

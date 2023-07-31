@@ -8,7 +8,7 @@ public class HighScoreUI : MonoBehaviour
 {
     // text mesh pro
     private TextMeshProUGUI highScoreText;
-    bool hasRun;
+    static bool hasRun = true;
 
     void Awake(){
         Debug.Log(hasRun);

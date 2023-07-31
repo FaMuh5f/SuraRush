@@ -35,8 +35,6 @@ public class GameOverUIMulti : MonoBehaviour
     {
         // string skorText = string.Format("Skor kamu: {0}", score);
         // scoreText.text = skorText;
-
-        Debug.Log(winTracker.getWhoWin());
         
         if(winTracker.getWhoWin() == true)
         {
